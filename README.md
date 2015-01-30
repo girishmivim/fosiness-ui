@@ -18,6 +18,7 @@ Grunt bower karma angular project with grunt-proxy-connector
     npm install --global yo bower grunt-cli
     
 2) Run below commands to install the node and bower dependencies into local.
+
      npm update
      bower update
      npm install grunt-connect-proxy --save-dev
