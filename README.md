@@ -17,7 +17,12 @@ Grunt bower karma angular project with grunt-proxy-connector
   
     npm install --global yo bower grunt-cli
     
-2) run the command grunt serve to bring up the livereload server.
+2) Run below commands to install the node and bower dependencies into local.
+     npm update
+     bower update
+     npm install grunt-connect-proxy --save-dev
+    
+3) run the command grunt serve to bring up the livereload server.
   By default kivereload server starts at localhost:9000 and will be listing to the backend services to localhost:8080
   
   
