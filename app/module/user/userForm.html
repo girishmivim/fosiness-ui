@@ -1,0 +1,161 @@
+<script>
+    $(document).ready(function() {
+        $('input[name=phoneNumber]').keypress(function(e) {
+            var a = [];
+            var k = e.which;
+
+            for (i = 48; i < 58; i++)
+                a.push(i);
+
+            if (!($.inArray(k, a) >= 0))
+                e.preventDefault();
+        });
+    });
+</script>
+<script>
+    $(document)
+            .ready(
+                    function() {
+                        $(function() {
+                            $('input[type=text]')
+                                    .keydown(
+                                            function(e) {
+                                                if (e.shiftKey || e.ctrlKey
+                                                        || e.altKey) {
+                                                    e.preventDefault();
+                                                } else {
+                                                    var key = e.keyCode;
+                                                    if (!((key == 8)
+                                                            || (key == 9)
+                                                            || (key == 32)
+                                                            || (key >= 34 && key <= 47) || (key >= 65 && key <= 90))) {
+                                                        e.preventDefault();
+                                                    }
+                                                }
+                                            });
+                        });
+                    });
+</script>
+
+
+<div class="alert alert-success" ng-show="operationStatus.regSuccess">
+    <a class="close" data-dismiss="alert">×</a> <strong>Well done!</strong>
+    {{operationStatus.message}}
+</div>
+
+ <div class="alert alert-danger" ng-show="operationStatus.regFailur">
+    <a class="close" data-dismiss="alert">×</a> <strong>Oh Snap!</strong>
+    {{operationStatus.message}}
+</div> 
+<div class="alert alert-danger" ng-show="operationStatus.captchaFail">
+    <a class="close" data-dismiss="alert">×</a> <strong>Oh Snap!</strong>
+    {{operationStatus.message}}
+</div> 
+
+
+<div class="container-fluid" style="width: 80%;">
+<div class="row">
+<div class="col-xs-12 fos-reg-header">
+    <h1>Registration</h1>
+    <p>Threre are two types of<br>users for registration</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+     <form class="form-horizontal" role="form" ng-app="fosRegistrationApp"
+ng-submit="verifyCaptchaAndSubmitFrom()">
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="user-type"></label>
+            <div class="col-sm-9">
+              <input type="radio" id="radio-1" value="corp" name="user-type" checked="checked" ng-model="user.type" /><label for="radio-1"><span></span>Corporate</label>
+              <input type="radio" id="radio-2" value="indiv" name="user-type" ng-model="user.type"/><label for="radio-2"><span></span>Individual</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="email">Email-id</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="email" placeholder="email@domain.com" ng-model="user.emailid">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="pwd">Full Name</label>
+            <div class="col-sm-9">
+                <div class="form-group" style="margin-bottom: 0px;">
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="fname" placeholder="First Name" ng-model="user.fname">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="lname" placeholder="Last Name" ng-model="user.lname">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="companyName">Company</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Company Name" ng-model="user.company">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-3" for="title">Title</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="companyTitle" name="title" placeholder="Company Title" ng-model="user.title">
+            </div>
+          </div>
+          
+           <div class="form-group"> 
+          <label class="control-label col-sm-3" for="title"></label>
+            <div class="col-sm-9">
+          <div 
+                vc-recaptcha
+                theme="'light'"
+                key="model.key"
+                on-create="setWidgetId(widgetId)"
+                on-success="setResponse(response)"></div>
+             </div>
+           
+            </div>
+          
+           <div class="form-group">
+            <label class="control-label col-sm-3" for="phone">Phone</label>
+            <div class="col-sm-9">
+               <input type="tel" class="form-control" id="phone-number" name="phone-number" placeholder="Your Phone Number" ng-model="user.phone">
+            </div>
+          </div>
+          <div class="form-group pull-right">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success">Cancel</button>
+              <button type="reset" class="btn btn-success">Reset</button>
+            </div>
+          </div>
+    </form>
+</div>
+
+<div class="col-md-6">
+    <div class="row">
+        <div class="col-xs-12 fos-user-type-corp">
+            <div class="fos-active-user-type fos-header-marker fos-clear">
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><p>Corporate user</p>
+            </div>
+            <div class="fos-ut-description ">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 fos-user-type-indiv">
+            <div class="fos-inactive-user-type fos-header-marker fos-clear">
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><p>Individual user</p>
+            </div>
+            <div class="fos-ut-description">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget     dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>        
+</div> 

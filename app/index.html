@@ -8,34 +8,31 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link href="resources/css/mivimstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Custom CSS -->
+   
+    <link href="resources/css/mivimslider.css" rel="stylesheet">
+    
+   
     <!-- endbuild -->
   </head>
-  <body ng-app="fosinessUiApp">
+  <body ng-app="homeIncludeApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">fosinessUi</h3>
-      </div>
-
-      <div ng-view=""></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+    <div class="container-fluid">
+    <!-- Main Container Starts -->
+      <div data-ng-include data-src="'module/home/views/header.html'"></div>
+      <div ng-view></div>
+      <div data-ng-include data-src="'module/home/views/footer.html'"></div>
+      <span class="scrollToTop"></span>
     </div>
 
 
@@ -67,12 +64,57 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=vcRecapthaApiLoaded" async defer"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+
+        <!-- Recaptcha scripts start here -->
+        <script src="module/fosRecaptcha/scripts/module/module.js"></script>
+        <script src="module/fosRecaptcha/scripts/directive/directive.js"></script>  
+        <script src="module/fosRecaptcha/scripts/service/service.js"></script>
+        <script src="module/fosRecaptcha/scripts/lib/angular-recaptcha.min.js"></script>
+        <!-- Recaptcha scripts ends here -->
+        <!-- commonUtil script start here -->
+        <script src="module/common/scripts/commonUtilsModule.js"></script>
+        <script src="module/common/scripts/directive/fosFileUpload.js"></script>
+        <!-- commonUtil script end here -->
+        <script src="module/app.js"></script>
+
+        <script src="shared/js/mivimslider.js"></script>
+        <!-- User module Scripts Start here-->
+        <script src="module/user/scripts/userModule.js"></script>
+        <script src="module/user/scripts/userService.js"></script>
+        <script src="module/user/scripts/userController.js"></script>
+        <!-- User module Scripts End here-->
+
+        <!-- Sector and sub sector scripts start here  -->
+        <script src="module/sector/scripts/sectorModule.js"></script>
+        <script src="module/sector/scripts/sectorService.js"></script>
+        <!-- Sector and sub sector scripts end here  -->
+
+        <!-- Seller module Scripts Start here-->
+        <script src="module/seller/scripts/sellerModule.js"></script>
+        <script src="module/seller/scripts/sellerService.js"></script>
+        <script src="module/seller/scripts/sellerController.js"></script>
+        <!-- Seller module Scripts end here-->
+
+        <!-- Buyer module Scripts Start here-->
+        <script src="module/buyer/scripts/buyerModule.js"></script>
+        <script src="module/buyer/scripts/buyerService.js"></script>
+        <script src="module/buyer/scripts/buyerController.js"></script>
+        <!-- Buyer module Scripts end here-->
+
+        <script src="module/user/scripts/intlTelInput.min.js"></script>
+        <script src="shared/js/mivimslider.js"></script>
+        
+
+        <link href="resources/css/mivimslider.css" rel="stylesheet">
+        <link href="resources/css/user/intlTelInput.css"  rel="stylesheet">
         <!-- endbuild -->
 </body>
 </html>

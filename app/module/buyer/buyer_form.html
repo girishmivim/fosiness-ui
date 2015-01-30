@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keyword" content=""> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fooziness Home</title>
+
+        Bootstrap
+        <link href="../../../resources/css/mivimstyle.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../resources/css/user/intlTelInput.css">
+        <script type="text/javascript" src="../../../lib/jquery/jquery-2.1.1.min.js"></script>
+        <script src="../../user/js/intlTelInput.min.js"></script> -->
+        
+  
+        <div class="container-fluid">   
+        <!-- Navigation and Search Header starts -->
+        <div class="row navbar-fixed-top"> 
+          <nav id="fos-primary-nav-wrap" class="fos-custom-navbar">
+            <a href=""><div class="fos-nav-brand"></div></a>
+            <ul>
+              <li class="fos-current-menu-item"><a href="#">Home</a></li>
+              <li><a href="#">You Are</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Registration</a>
+                <ul>
+                  <li><a href="#">Starter Login Form</a></li>
+                  <li><a href="#">Basic Login Form</a></li>
+                  <li><a href="#">Corporate Login Form</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav> <!-- Navigation ends here -->
+
+          <div class="row fos-app-header" id="fos-topNav">
+            <div class="col-xs-2">
+                <a href="#"><div class="fos-brand-browse-bar"></div></a>
+            </div>
+            <div class="col-xs-6">
+              <form class="fos-form-position">
+                  <fieldset id="browse">
+                      <label for="browse">Browse Category</label>
+                      <input type="text" name="browse" class="textbox" />
+                      <button type="submit" name="browse">Go</button>
+                  </fieldset>
+              </form>
+            </div>
+            <div class="col-xs-4">
+              <div class="fos-seller-notification">
+                  <ul>
+                    <li><img src="css/images/contact.png"><p>*Mouse Over Notification</p></li>
+                    <li><img src="css/images/message.png"><p>*Mouse Over Notification</p></li>
+                    <li><img src="css/images/notification.png"><p>*Mouse Over Notification</p><span>120</span></li>
+                    <li class="fos-user-profile"><img src="css/images/default-user.png"><span></span>
+                      <ul id="fos-loggeduser">
+                        <div class="fos-up-marker"></div> <!-- arrow pointing to user -->
+                        <!-- USer profile selection menu -->
+                        <li class="glyphicon glyphicon-user fos-action-icon"><a href="#">Profile</a></li>
+                        <li class="glyphicon glyphicon-cog fos-action-icon"><a href="#">Seetings</a></li>
+                        <li class="glyphicon glyphicon-log-out fos-action-icon"><a href="#">Logout</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User ribbon -->
+        <div class="row fos-user-ribbon">
+          <span>&nbsp;</span>
+          <div class="col-xs-6 fos-mplace">
+            <div class="row">
+              <div class="col-xs-8 "><h1>MARKET PLACE</h1></div>
+              <div class="col-xs-4 "><h4>BUYER</h4></div>
+            </div>
+          </div>
+          <!-- User Logo -->
+          <div class="col-xs-6">
+            <div class="fos-user-wrapper">
+              <img src="css/images/buyer.png"> <!-- Dynamic user-type Image -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Buyer Form -->
+        <div class="row">
+            <div class="col-md-6">
+                 <form class="form-horizontal fos-app-form-position" role="form" ng-submit="submitBuyerForm()">
+                      <h4>Join Buyer List form</h4>
+                      <div class="form-group fos-bottom-spacing">
+                        <label class="control-label col-sm-3" for="logo">Photo<br>(Optional)</label>
+                        <div class="col-sm-8">
+                            <div class="fos-buyer-logo">
+                                <img id="buyer-logo" src="#" alt="Logo" />  
+                            </div>
+                            <div class="fileUpload btn">
+                                <span>Upload</span>
+                                <input id="uploadBtn" type="file" class="upload" fos-file-model="fileModel.logo"/>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group fos-bottom-spacing">
+                        <div class="col-sm-12">
+                            <input type="radio" id="radio-1" value="corp" name="user-type" checked="checked" /><label for="radio-1"><span></span>Corporate</label>
+                            <input type="radio" id="radio-2" value="indiv" name="user-type" /><label for="radio-2"><span></span>Individual</label>
+                        </div>
+                      </div>
+                      <div class="form-group fos-bottom-spacing">
+                        <label class="control-label col-sm-3" for="country">Country</label>
+                        <div class="col-sm-1 fos-select">
+                            <select class="form-control" ng-model="buyer.country">
+                              <option>India</option>
+                              <option>Japan</option>
+                              <option>China</option>
+                              <option>Rusia</option>
+                              <option>Nepal</option>
+                              <option>Pakistan</option>
+                            </select>
+                        </div>
+                        <label class="control-label col-sm-2" for="region">Region</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="region" name="region" placeholder="Region" ng-model="buyer.region">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group fos-bottom-spacing">
+                          <label class="control-label col-sm-3" for="sector">Sector</label>
+                          <div class="col-sm-9 fos-s-su-selector">
+                                <select class="form-control" ng-options="sector.name for sector in sectors" ng-model="buyer.selectedSector"  ng-change="loadSubsectors()">
+                                                                    
+                                </select>
+                          </div>
+                      </div>
+                      <div class="form-group fos-bottom-spacing">
+                          <label class="control-label col-sm-3" for="sub-sector">Sub Sector</label>
+                          <div class="col-sm-9 fos-s-su-selector">
+                                <select class="form-control" ng-options="subsector.name for subsector in subsectors" ng-model="buyer.selectedSubSector">
+                                  
+                                </select>
+                          </div>
+                      </div>
+                      <div class="form-group fos-bottom-spacing">
+                        <label class="control-label col-sm-3" for="language">Language</label>
+                        <div class="col-sm-1 fos-select">
+                            <select class="form-control" ng-model="buyer.language">
+                              <option>English</option>
+                              <option>Japanies</option>
+                              <option>Chinese</option>
+                              <option>Rusian</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group fos-bottom-spacing">
+                        <label class="control-label col-sm-5" for="min-target">Minimum target purchase value($)</label>
+                        <div class="col-sm-1 fos-s-su-selector fos-select-target">
+                            <select class="form-control" ng-model="buyer.minPurchase">
+                              <option>5000000.00</option>
+                              <option>7000000.00</option>
+                              <option>12000000.00</option>
+                              <option>20000000.00</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="form-group fos-bottom-spacing">
+                        <label class="control-label col-sm-5" for="min-target">Minimum target purchase value($)</label>
+                        <div class="col-sm-1 fos-s-su-selector fos-select-target">
+                            <select class="form-control" ng-model="buyer.maxPurchase">
+                              <option>5000000.00</option>
+                              <option>7000000.00</option>
+                              <option>12000000.00</option>
+                              <option>20000000.00</option>
+                            </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group fos-bottom-spacing">
+                          <label class="control-label col-sm-3" for="comment">Comments</label>
+                          <div class="col-sm-9">
+                              <textarea class="form-control" rows="4" id="about" ng-model="buyer.comments">Comments...</textarea>
+                          </div>
+                      </div>
+                      <div class="form-group pull-right">
+                        <div class="col-sm-12">
+                          <button type="submit" class="btn btn-success">Submit</button>
+                          <button type="submit" class="btn btn-success">Cancel</button>
+                          <button type="reset" class="btn btn-success">Reset</button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+        <div class=" row fos-app-footer"> <!-- Fos App footer -->
+            <div class="row">
+              <div class="col-md-2 col-md-offset-3">
+                <h3>Research</h3>
+                <ul>
+                    <li>Trends</li>
+                    <li>Online Employment Report</li>
+                    <li>Annual Impact Report</li>
+                    <li>Global Business Survey</li>
+                    <li>Global Freelancer</li>
+                    <li>Women in Technology</li>
+                </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Research</h3>
+                    <ul>
+                        <li>Trends</li>
+                        <li>Online Employment Report</li>
+                        <li>Annual Impact Report</li>
+                        <li>Global Business Survey</li>
+                        <li>Global Freelancer</li>
+                        <li>Women in Technology</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Research</h3>
+                    <ul>
+                        <li>Trends</li>
+                        <li>Online Employment Report</li>
+                        <li>Annual Impact Report</li>
+                        <li>Global Business Survey</li>
+                        <li>Global Freelancer</li>
+                        <li>Women in Technology</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Research</h3>
+                    <ul>
+                        <li>Trends</li>
+                        <li>Online Employment Report</li>
+                        <li>Annual Impact Report</li>
+                        <li>Global Business Survey</li>
+                        <li>Global Freelancer</li>
+                        <li>Women in Technology</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+              <div class="fos-app-social">
+                <ul>
+                  <li class="fos-facebook"><a href="#"></a></li>
+                  <li class="fos-google"><a href="#"></a></li>
+                  <li class="fos-linkedin"><a href="#"></a></li>
+                  <li class="fos-pintrest"><a href="#"></a></li>
+                  <li class="fos-tweeter"><a href="#"></a></li>
+                </ul>
+              </div>  
+            </div>
+          </div> <!-- End of footer Links row -->
+               
+      </div> <!-- Main Container ends -->
