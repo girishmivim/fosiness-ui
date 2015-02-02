@@ -1,186 +1,207 @@
-<div class="container-fluid">   
-<!-- Navigation and Search Header starts -->
 <div class="row navbar-fixed-top"> 
-<nav id="fos-primary-nav-wrap" class="fos-custom-navbar">
-<a href=""><div class="fos-nav-brand"></div></a>
-<ul>
-  <li class="fos-current-menu-item"><a href="#">Home</a></li>
-  <li><a href="#">You Are</a></li>
-  <li><a href="#">How It Works</a></li>
-  <li><a href="#">Partners</a></li>
-  <li><a href="#">Registration</a>
-    <ul>
-      <li><a href="#">Starter Login Form</a></li>
-      <li><a href="#">Basic Login Form</a></li>
-      <li><a href="#">Corporate Login Form</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Resources</a></li>
-  <li><a href="#">Login</a></li>
-</ul>
-</nav> <!-- Navigation ends here -->
-
-<div class="row fos-app-header" id="fos-topNav">
-<div class="col-xs-2">
-    <a href="#"><div class="fos-brand-browse-bar"></div></a>
-</div>
-<div class="col-xs-6">
-  <form class="fos-form-position">
-      <fieldset id="browse">
-          <label for="browse">Browse Category</label>
-          <input type="text" name="browse" class="textbox" />
-          <button type="submit" name="browse">Go</button>
-      </fieldset>
-  </form>
-</div>
-<div class="col-xs-4">
-  <div class="fos-seller-notification">
+  <nav id="fos-primary-nav-wrap" class="fos-custom-navbar">
+  <a href=""><div class="fos-nav-brand"></div></a>
+  <ul>
+    <li class="fos-current-menu-item"><a href="#">Home</a></li>
+    <li><a href="#">You Are</a></li>
+    <li><a href="#">How It Works</a></li>
+    <li><a href="#">Partners</a></li>
+    <li><a href="#">Registration</a>
       <ul>
-        <li><img src="../../resources/images/home-images-css/contact.png"><p>*Mouse Over Notification</p></li>
-        <li><img src="../../resources/images/home-images-css/message.png"><p>*Mouse Over Notification</p></li>
-        <li><img src="../../resources/images/home-images-css/notification.png"><p>*Mouse Over Notification</p><span>9</span></li>
-        <li class="fos-user-profile"><img src="../../resources/images/home-images-css/default-user.png"><span></span>
-          <ul id="fos-loggeduser">
-            <div class="fos-up-marker"></div>
-            <li class="glyphicon glyphicon-user fos-action-icon"><a href="#">Profile</a></li>
-            <li class="glyphicon glyphicon-cog fos-action-icon"><a href="#">Seetings</a></li>
-            <li class="glyphicon glyphicon-log-out fos-action-icon"><a href="#">Logout</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Starter Login Form</a></li>
+        <li><a href="#">Basic Login Form</a></li>
+        <li><a href="#">Corporate Login Form</a></li>
       </ul>
+    </li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+  </nav> <!-- Navigation ends here -->
+
+  <div class="row fos-app-header">
+    <div class="col-xs-2">
+        <a href="#"><div class="fos-fosiness-logo"></div></a>
+    </div>
+    <div class="col-xs-6">
+      <div class="row">
+        <div class="col-xs-2">
+          <div class="dropdown" id="fos-browse-dd">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Browse Category
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 1</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 2</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 2</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 4</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 5</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 6</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 7</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 8</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Category 9</a></li>
+            </ul>  
+          </div>
+        </div>
+        <div class="col-xs-10">
+          <form class="fos-form-position">
+            <fieldset id="browse">
+                <input type="text" name="browse" class="textbox" />
+                <button type="submit" name="browse"><i class="icon-search"></i></button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="fos-seller-notification">
+          <ul>
+            <li><img src="css/images/contact.png" class="img-responsive"><p>*Mouse Over Notification</p></li>
+            <li><img src="css/images/message.png" class="img-responsive"><p>*Mouse Over Notification</p></li>
+            <li><img src="css/images/notification.png" class="img-responsive"><p>*Mouse Over Notification</p><span>120</span></li>
+            <li class="fos-user-profile"><img src="resources/images/default-user.png" class="img-responsive"><span class="fos-down-arrow"></span>
+              <ul id="fos-loggeduser">
+                <div class="fos-up-marker"></div> <!-- arrow pointing to user -->
+                <!-- USer profile selection menu -->
+                <li class="glyphicon glyphicon-user fos-action-icon"><a href="#">Profile</a></li>
+                <li class="glyphicon glyphicon-cog fos-action-icon"><a href="#">Seetings</a></li>
+                <li class="glyphicon glyphicon-log-out fos-action-icon"><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
-
-
 <!-- User ribbon -->
-<div class="row fos-user-ribbon">
-<span>&nbsp;</span>
-<div class="col-xs-6 fos-mplace">
-  <div class="row">
-    <div class="col-xs-8 "><h1>MARKET PLACE</h1></div>
-    <div class="col-xs-4 "><h4>SELLER</h4></div>
+<div class="row">
+  <div class="fos-user-ribbon">
+    <span>&nbsp;</span>
+  <div class="col-xs-6 fos-mplace">
+    <div class="row">
+      <div class="col-xs-8 "><h1>MARKET PLACE</h1></div>
+      <div class="col-xs-4 "><h4>SELLER</h4></div>
+    </div>
   </div>
-</div>
-<!-- User Logo -->
-<div class="col-xs-6">
-  <div class="fos-user-wrapper">
-    <img src="../../resources/images/home-images-css/select.png">
+  <!-- User Logo -->
+  <div class="col-xs-6">
+    <div class="fos-user-wrapper">
+      <img src="../../resources\images\home-images-css/seller.png">
+    </div>
   </div>
-</div>
+  </div>
 </div>
 
 <!-- Seller Form -->
 <div class="row">
-    <div class="col-md-6">
-         <form class="form-horizontal fos-app-form-position" role="form" ng-submit="submitSellerForm()">
-              <h4>Seller Listing Form</h4>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="logo">Logo</label>
-                <div class="col-sm-9" id="fos-loader-icon">
-                    <input id="uploadFile" placeholder="Sample-logo.png" disabled="disabled" />
-                    <div class="fileUpload btn">
-                        <span>Upload</span>
-                        <input id="uploadBtn" type="file" class="upload"  fos-file-model="fileModel.logo"/>
-                    </div>
-                </div>
+  <div class="col-md-6">
+       <form class="form-horizontal fos-app-form-position" role="form" ng-submit="submitSellerForm()">
+            <h4>Seller Listing Form</h4>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="logo">Logo</label>
+              <div class="col-sm-9" id="fos-loader-icon">
+                  <input id="uploadFile" placeholder="Sample-logo.png" disabled="disabled" />
+                  <div class="fileUpload btn">
+                      <span>Upload</span>
+                      <input id="uploadBtn" type="file" class="upload"  fos-file-model="fileModel.logo"/>
+                  </div>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="companyName">Company</label>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="companyName">Company</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Company Name" ng-model="seller.company">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="country">Country</label>
+              <div class="col-sm-1 fos-select">
+                  <select class="form-control" ng-model="seller.address.country">
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>China</option>
+                    <option>Rusia</option>
+                    <option>Nepal</option>
+                    <option>Pakistan</option>
+                  </select>
+              </div>
+              <label class="control-label col-sm-2" for="region">Region</label>
+              <div class="col-sm-4">
+                  <input type="text" class="form-control" id="region" name="region" placeholder="Region" ng-model="seller.address.region" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="city">City</label>
+              <div class="col-sm-3">
+                 <input type="text" class="form-control" id="city" name="city" placeholder="City" ng-model="seller.address.city"> 
+              </div>
+              <label class="control-label col-sm-2" for="region">Pin Code</label>
+              <div class="col-sm-4">
+                  <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Pin Code" ng-model="seller.address.pincode">
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="address1">Address 1</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Company Name" ng-model="seller.company">
+                    <textarea class="form-control" rows="4" id="address1" ng-model="seller.address.addressLine1">Company Address</textarea>
                 </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="country">Country</label>
-                <div class="col-sm-1 fos-select">
-                    <select class="form-control" ng-model="seller.address.country">
-                      <option>India</option>
-                      <option>Japan</option>
-                      <option>China</option>
-                      <option>Rusia</option>
-                      <option>Nepal</option>
-                      <option>Pakistan</option>
-                    </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="address1" >Address 2<br>(optional)</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" rows="4" id="address2" ng-model="seller.address.addressLine2">Company Address</textarea>
                 </div>
-                <label class="control-label col-sm-2" for="region">Region</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="region" name="region" placeholder="Region" ng-model="seller.address.region" >
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="city">City</label>
-                <div class="col-sm-3">
-                   <input type="text" class="form-control" id="city" name="city" placeholder="City" ng-model="seller.address.city"> 
-                </div>
-                <label class="control-label col-sm-2" for="region">Pin Code</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Pin Code" ng-model="seller.address.pincode">
-                </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label col-sm-3" for="address1">Address 1</label>
-                  <div class="col-sm-9">
-                      <textarea class="form-control" rows="4" id="address1" ng-model="seller.address.addressLine1">Company Address</textarea>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label col-sm-3" for="address1" >Address 2<br>(optional)</label>
-                  <div class="col-sm-9">
-                      <textarea class="form-control" rows="4" id="address2" ng-model="seller.address.addressLine2">Company Address</textarea>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label col-sm-3" for="sector">Sector</label>
-                  <div class="col-sm-9 fos-s-su-selector">
-                        <select class="form-control"  ng-model="seller.selectedSector"  ng-options="sector.name for sector in sectors"
-                            ng-change="loadSubsectors()">                                                                 
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="sector">Sector</label>
+                <div class="col-sm-9 fos-s-su-selector">
+                      <select class="form-control"  ng-model="seller.selectedSector"  ng-options="sector.name for sector in sectors"
+                          ng-change="loadSubsectors()">                                                                 
 
-                        </select>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label class="control-label col-sm-3" for="subsector">Sub Sector</label>
-                  <div class="col-sm-9 fos-s-su-selector">
-                        <select class="form-control" ng-model="seller.selectedSubsector"  ng-options="subsector.name for subsector in subsectors">
-                        </select>
-                  </div>
-              </div>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="subsector">Sub Sector</label>
+                <div class="col-sm-9 fos-s-su-selector">
+                      <select class="form-control" ng-model="seller.selectedSubsector"  ng-options="subsector.name for subsector in subsectors">
+                      </select>
+                </div>
+            </div>
 
 
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="product">Product</label>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="product">Product</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="product" name="product" placeholder="Product Name" ng-model="seller.products">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="url">Website</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="url" name="url" placeholder="Company URL" ng-model="seller.webstite">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="phone">Phone</label>
+              <div class="col-sm-9">
+                <input type="tel" class="form-control" id="phone-number" name="phone" placeholder="Phone Number" ng-model="seller.phone">
+              </div>
+            </div>                                                   
+            <div class="form-group">
+                <label class="control-label col-sm-3" for="address1">Company Information</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="product" name="product" placeholder="Product Name" ng-model="seller.products">
+                    <textarea class="form-control" rows="4" id="about" ng-model="seller.companyInfo">About...</textarea>
                 </div>
+            </div>
+            <div class="form-group pull-right">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-success">Cancel</button>
+                <button type="reset" class="btn btn-success">Reset</button>
               </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="url">Website</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" id="url" name="url" placeholder="Company URL" ng-model="seller.webstite">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="phone">Phone</label>
-                <div class="col-sm-9">
-                  <input type="tel" class="form-control" id="phone-number" name="phone" placeholder="Phone Number" ng-model="seller.phone">
-                </div>
-              </div>                                                   
-              <div class="form-group">
-                  <label class="control-label col-sm-3" for="address1">Company Information</label>
-                  <div class="col-sm-9">
-                      <textarea class="form-control" rows="4" id="about" ng-model="seller.companyInfo">About...</textarea>
-                  </div>
-              </div>
-              <div class="form-group pull-right">
-                <div class="col-sm-12">
-                  <button type="submit" class="btn btn-success">Submit</button>
-                  <button type="submit" class="btn btn-success">Cancel</button>
-                  <button type="reset" class="btn btn-success">Reset</button>
-                </div>
-              </div>
-        </form>
-    </div>
+            </div>
+      </form>
+  </div>
 </div>

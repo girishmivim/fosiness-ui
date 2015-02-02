@@ -1,19 +1,3 @@
-      <script type="text/javascript">
-        $(document).ready(function(){
-            $('#home-slider').mivimslider({
-              delay:5000, 
-              animationSpeed: 2500,
-              showNextPrev:true,
-              showPlayButton:false,
-              autoSlide:true,
-              animationType:'fading'
-            });
-            $('#responsive').change(function(){
-                $('#responsive-wrapper').width(jQuery(this).val());
-          });
-          
-        });
-      </script>
       <!-- Images Slider starts -->
       <div class="row">
         <div class="mivimslider">
@@ -258,7 +242,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-odd-thumb">
-                    <img class="image-responsive" src="images/seller.png" alt="Seller">
+                    <img class="image-responsive" src="../../resources\images\home-images/seller.png" alt="Seller">
                     <p>Seller</p>
                   </div>
                   <div class="fos-current">
@@ -272,7 +256,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-even-thumb">
-                    <img class="image-responsive" src="images/buyer.png" alt="Buyer">
+                    <img class="image-responsive" src="../../resources\images\home-images/buyer.png" alt="Buyer">
                     <p>Buyer</p>
                   </div>
                   <div class="fos-current">
@@ -286,7 +270,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-odd-thumb">
-                    <img class="image-responsive" src="images/employer.png" alt="Employer">
+                    <img class="image-responsive" src="../../resources\images\home-images/employer.png" alt="Employer">
                     <p>Employer</p>
                   </div>
                   <div class="fos-current">
@@ -300,7 +284,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-even-thumb">
-                    <img class="image-responsive" src="images/employee.png" alt="Employee">
+                    <img class="image-responsive" src="../../resources\images\home-images/employee.png" alt="Employee">
                     <p>Employee</p>
                   </div>
                   <div class="fos-current">
@@ -314,7 +298,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-odd-thumb">
-                    <img class="image-responsive" src="images/service-provider.png" alt="Service Provider">
+                    <img class="image-responsive" src="../../resources\images\home-images/service-provider.png" alt="Service Provider">
                     <p>Service Provider</p>
                   </div>
                   <div class="fos-current">
@@ -332,7 +316,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-even-thumb">
-                    <img class="image-responsive" src="images/service-seeker.png" alt="Service Seeker">
+                    <img class="image-responsive" src="../../resources\images\home-images/service-seeker.png" alt="Service Seeker">
                     <p>Service Seeker</p>
                   </div>
                   <div class="fos-current">
@@ -346,7 +330,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-odd-thumb">
-                    <img class="image-responsive" src="images/franchisor.png" alt="Franchisor">
+                    <img class="image-responsive" src="../../resources\images\home-images/franchisor.png" alt="Franchisor">
                     <p>Franchisor</p>
                   </div>
                   <div class="fos-current">
@@ -360,7 +344,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-even-thumb">
-                    <img class="image-responsive" src="images/franchisee.png" alt="Franchisee">
+                    <img class="image-responsive" src="../../resources\images\home-images/franchisee.png" alt="Franchisee">
                     <p>Franchisee</p>
                   </div>
                   <div class="fos-current">
@@ -374,7 +358,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-odd-thumb">
-                    <img class="image-responsive" src="images/service-provider.png" alt="Entrepreneurs">
+                    <img class="image-responsive" src="../../resources\images\home-images/service-provider.png" alt="Entrepreneurs">
                     <p>Entrepreneurs</p>
                   </div>
                   <div class="fos-current">
@@ -388,7 +372,7 @@
               <div class="fos-thumb fos-flip-container">
                 <div class="fos-flipper">
                   <div class="fos-even-thumb">
-                    <img class="image-responsive" src="images/investor.png" alt="Investor">
+                    <img class="image-responsive" src="../../resources\images\home-images/investor.png" alt="Investor">
                     <p>Investor</p>
                   </div>
                   <div class="fos-current">
@@ -442,7 +426,15 @@
         </div>
       </div> <!-- End of How Work row -->
 
-
+      <script type="text/javascript">
+        $(function(){
+          $('#fos-loginform').submit(function(e){
+            return false;
+          });
+          
+          $('#fos-modaltrigger').leanModal({ top: 110, overlay: 0.9, closeButton: ".fos-hidemodal" });
+        });
+      </script>
       <!-- Login Section Overlay Division-->
       <div class="row" id="fos-login-form" style="display: none;">
           <div class="fos-close"></div>
@@ -467,7 +459,5 @@
             </form>  
           </fieldset>
       </div> <!-- End of Login Section -->
-
-
   </div>
  
