@@ -1,4 +1,19 @@
-
+      <script type="text/javascript">
+        $(document).ready(function(){
+            $('#home-slider').mivimslider({
+              delay:5000, 
+              animationSpeed: 2500,
+              showNextPrev:true,
+              showPlayButton:false,
+              autoSlide:true,
+              animationType:'fading'
+            });
+            $('#responsive').change(function(){
+                $('#responsive-wrapper').width(jQuery(this).val());
+          });
+          
+        });
+      </script>
       <!-- Images Slider starts -->
       <div class="row">
         <div class="mivimslider">
@@ -140,46 +155,22 @@
       <!-- Post Join and Search Links row -->
       <div class="row">
         <div class="fos-food-business">
-          <div class="col-xs-3">
-            <div class="fos-business-tabs" id="fos-icon-zoom">
-              <div class="fos-content-business">
-                <a href="#">
-                  <div class="fos-post">
-                    <p>Post</p>
-                  </div>
-                </a>
+          <div class="col-xs-8 col-xs-offset-2">
+            <div class="col-xs-12 fos-business-tabs">
+              <a href="#">
+                <div class="fos-business-join"><h2>Join</h2></div>
+              </a>
+              <a href="#">
+                <div class="fos-business-post"><h2>Post</h2><div class="fos-business-left"></div></div>
+              </a>
+              <a href="#">
+                <div class="fos-business-search"><h2>Search</h2><div class="fos-business-right"></div>
+              </a>
+              <div class="fos-business-desc">
+                <h3>FOOD BUSINESS</h3>
+                <p>Products for Sale - Business Opportunities<br>Services - Vacancies - Franchises</p>    
               </div>
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <div class="fos-business-tabs" id="fos-icon-zoom">
-              <div class="fos-content-business">
-                <div class="fos-left-right-arrow"></div>
-                <h1>FOOD BUSINESS</h1>
-                <h2>Products for Sale – Business Opportunities<br>Services – Vacancies - Franchises</h2>
-                <a href="#">
-                  <div class="fos-join">
-                    <p>Join</p>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="fos-business-tabs" id="fos-icon-zoom">
-              <div class="fos-content-business">
-                <a href="#">
-                  <div class="fos-search">
-                    <p>Search</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="fos-know-more">
-              <button>Click to Know More</button>
+              <button>Click to know More</button>
             </div>
           </div>
         </div>
@@ -447,6 +438,36 @@
           </p>
         </div>
         <div class="col-md-4 fos-left-border">
-            <button type="submit">How it Works</button>
+            <button type="submit">How it Works <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div> <!-- End of How Work row -->
+
+
+      <!-- Login Section Overlay Division-->
+      <div class="row" id="fos-login-form" style="display: none;">
+          <div class="fos-close"></div>
+          <fieldset>
+            <form id="fos-loginform" name="loginform" method="post" novalidate>
+              <h2>Login</h2>
+              <div class="col-xs-12 fos-login-fields">
+                <label for="inputEmail">Email-id</label>
+                <input type="email" name="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+                <label for="inputPassword">Password</label>
+                <input type="password" name="inputPassword" class="form-control" placeholder="Password" required>
+              </div>
+              <div class="col-xs-12">
+                <div class="col-xs-6 fos-login-cookie">
+                  <input type="checkbox" id="remember" value="remember" name="remember" checked="checked" /><label for="remember"><span></span>Remember me</label>
+                </div>
+                <div class="col-xs-6 fos-forgot-credential">
+                  <a href="#">Forgot your Login?</a>
+                </div>
+              </div>
+              <button id="fos-loginbtn" class="btn btn-lg btn-success btn-block fos-hidemodal" type="submit" name="loginbtn">Sign in</button>
+            </form>  
+          </fieldset>
+      </div> <!-- End of Login Section -->
+
+
+  </div>
+ 

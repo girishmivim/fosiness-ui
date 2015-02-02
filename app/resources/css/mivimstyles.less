@@ -1,0 +1,3581 @@
+/*custom style
+Author: Vikrant Kumar;
+===================================================================================
+*/
+
+// Importing required configuration files
+
+	@import (reference) "mivim-theme-config.less";
+
+//=================================================================================
+
+
+//Image Feeds for Slider-----------------------------------------------------------
+
+/* Image feed for the Home Page Slider*/
+
+.fos-slider-img-1{
+	background: url('@{fos-images}1.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+.fos-slider-img-2{
+	background: url('@{fos-images}2.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+.fos-slider-img-3{
+	background: url('@{fos-images}3.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+.fos-slider-img-4{
+	background: url('@{fos-images}4.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+
+/*-----------------------Primary navigation--------------------------------------*/
+.fos-custom-navbar{
+	width: 100%;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+	background: lighten(@fos-topNav, 15%) !important;
+}
+.fos-custom-navbar img{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+#fos-primary-nav-wrap
+{
+	margin:0;
+	width: 100%;
+	background: lighten(@fos-topNav, 15%) !important;
+	font-family: @fos-basefont-nav;
+}
+
+#fos-primary-nav-wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:right;
+	width: 70%;
+	margin:0;
+	padding:0
+}
+
+#fos-primary-nav-wrap ul a
+{
+	display:block;
+	line-height:60px;
+	color: lighten(@fos-topNav, 80%);
+	text-decoration: none;
+}
+
+#fos-primary-nav-wrap ul li
+{
+	position:relative;
+	float: left;
+	width: 14.28%;
+	margin:0;
+	text-align: center;
+	padding:0
+}
+
+#fos-primary-nav-wrap ul li.fos-current-menu-item
+{
+	background:lighten(@fos-topNav, 20%);
+	color: lighten(@fos-topNav, 90%);
+	font-weight: 700;
+}
+
+#fos-primary-nav-wrap ul li:hover
+{
+	background: lighten(@fos-topNav, 20%);
+}
+
+#fos-primary-nav-wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	width: 140%;
+	background: lighten(@fos-topNav, 20%);
+	opacity: 0.88;
+	padding:0;
+	z-index: 1000;
+}
+
+#fos-primary-nav-wrap ul ul li
+{
+	float:none;
+	width:100%;
+	border-top: .08em solid lighten(@fos-topNav, 10%);
+	padding: 0 5px;
+}
+
+#fos-primary-nav-wrap ul ul a
+{
+	line-height:35px;
+	width: 100%;
+	padding:5px;
+}
+
+#fos-primary-nav-wrap ul ul ul
+{
+	top:0;
+	background: lighten(@fos-topNav, 20%);
+	opacity: 0.88;
+	left:100%
+}
+
+#fos-primary-nav-wrap ul li:hover > ul
+{
+	display:block;
+	background: darken(@fos-topNav, 10%);
+}
+
+#fos-primary-nav-wrap div.fos-nav-brand{
+	display:block;
+	width: 120px;
+	float: left;
+	height: 95%;
+	margin-left: 5%;
+	background: url('@{fos-images}logo.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+}
+#fos-topNav{
+	z-index: 100 !important;
+}
+#fos-topNav div a div.fos-brand-browse-bar{
+	display:block;
+	width: 120px;
+	margin-top: 5px;
+	float: left;
+	height: 50px;
+	margin-left: 20%;
+	background: url('@{fos-images}logo.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+}
+.fos-fosiness-logo{
+	display:block;
+	width: 120px;
+	margin-top: 5px;
+	float: left;
+	height: 50px;
+	margin-left: 20%;
+	background: url('@{fos-images}logo.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+}
+//Tow Brand header with browse field
+.fos-form-position{
+	background: lighteen(@fos-topNav, 100%) !important;
+	padding-top: 10px;
+}
+.fos-form-position fieldset{
+	color: lighten(@fos-basefont-color, 30%);
+	margin-top: .5% !important;
+	position: relative;
+}
+
+.fos-form-position fieldset label {
+  float:left;
+  font-size: @fos-basefont-size - .2em;
+  padding:1% 2%;
+  text-align:center;
+  font-weight:700;
+  height: 40px !important;
+  border: 1px solid lighten(@fos-basefont-color, 70%);   
+  background: url('@{fos-images}webpage-31.png') no-repeat !important;
+  background-size: 100% 100% !important;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+
+.fos-form-position fieldset input.textbox { 
+    margin-bottom: 10px !important;
+    background: lighten(@fos-basefont-color, 100%);; 
+    padding: -10% 1% 10% 1% !important;
+    width: 40%;
+  	color: lighten(@fos-basefont-color, 20%);
+  	font-weight: 600;
+  	height: 50px;
+  	position: absolute;
+	top: 0;
+	left: 20%;
+  } 
+.fos-form-position fieldset .fos-button-browse{
+ 	background: url('@{fos-images}webpage-31.png') no-repeat 100% 100% !important;
+ 	border: 1px solid lighten(@fos-basefont-color, 70%);
+ 	background: url('@{fos-images}webpage-31.png') no-repeat !important;
+  	background-size: 100% 100% !important;
+ 	height: 40px;
+  	padding: 1% 1%;
+  	width: 5%;
+  	position: absolute;
+	top: 0;
+	left: 60.3%;
+ }
+ .fos-sub-header{
+	margin-top: 60px;
+	background: lighten(@fos-basefont-color, 100%);
+	box-shadow: 2px 5px 10px lighten(@fos-basefont-color, 20%);
+	z-index: 2000;
+	height: 60px;
+}
+.fos-sub-header.fos-hidden #fos-topNav {
+   opacity: 0;
+   transition: 1s;
+   z-index: 1000;
+}
+.fos-shadow-class{
+	box-shadow: 2px 5px 10px lighten(@fos-basefont-color, 40%);
+}
+//------------------------------------------------------------------------------------------------------
+
+/*Communicate Portion*/
+.fos-communicate{
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	background: url('@{fos-images}Communication.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.fos-communicate p{
+	padding-top: 7%;
+	text-align: center;
+	font-size: 4.2em;
+	font-family: @fos-basefont-heading;
+	text-transform: uppercase;
+	color: lighten(@fos-basefont-color, 100%);
+}
+
+//------------------------------------------------------------------------------------------------------
+/* Sliding menu*/
+.fos-slideup-menu-top{
+	width: 100%;
+	height: 60px;
+	background: lighten(@fos-basefont-color, 89%);
+	border-bottom: 2px solid lighten(@fos-basefont-color, 60%);
+	margin-bottom: 2%;
+}
+.fos-slideup-menu-pos{
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	height: 150px;
+	position: relative;
+	font-family: @fos-basefont-heading;
+}
+.fos-hidder{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 110%;
+	z-index: 1000;
+	background: @fos-themebase-color;
+}
+.fos-zoom-div{
+	overflow: hidden;
+	font-family: @fos-basefont-heading;
+	font-size: 1em;
+	height: 150px;
+	width: 100%;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+	display: block;
+}
+.fos-zoom-div p{
+	line-height: 20px;
+	position: absolute;
+	top: 5px;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	text-decoration: none !important;
+	color: lighten(@fos-basefont-color, 60%) !important;
+	font-weight: 400;
+}
+
+.fos-zoom-div:hover{
+	cursor: pointer;
+	margin-top: -50px;
+	transition-property: all;
+	transition-duration: 1.5s;
+}
+/*Slideup Navigation divisions*/
+.fos-zoom-div div{
+	position: absolute;
+	top: 25px;
+	height: 125px;
+	width: 100px;
+
+}
+.fos-buyer{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: 0 0;
+	width: 100px;
+}
+.fos-seller{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -100px 0;
+	width: 100px;
+}
+.fos-entrepreneurs{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -205px 0;
+	width: 100px;
+}
+.fos-investors{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -310px 0;
+	width: 100px;
+}
+.fos-service-provider{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -415px 0;
+	width: 100px;
+}
+.fos-service-seeker{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -520px 0;
+	width: 100px;
+}
+.fos-employer{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -625px 0;
+	width: 100px;
+}
+.fos-employee{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -730px 0;
+	width: 100px;
+}
+.fos-franchisors{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -840px 0;
+	width: 100px;
+}
+.fos-franchisees{
+	background: url('@{fos-images}slide-up.png') no-repeat;
+	background-position: -945px 0;
+	width: 100px;
+}
+
+
+//--------------------------------------------------------------------------------------------
+
+/*News and Feeds*/
+.fos-interview{
+	background: lighten(@fos-basefont-color, 100%) !important;
+	float: left;
+	min-height: 200px;
+}
+.fos-interview-content{
+	margin: 10% 10%;
+	
+}
+.fos-interview-content h2{
+	color: @fos-themebase-color;
+	font-weight: 600;
+	font-size: 180%;
+	text-indent: 30px;
+	font-family: @fos-basefont-heading; 
+}
+.fos-interview-content p{
+	color: lighten(@fos-basefont-color, 50%);
+	font-size: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+	width: 90%;
+	line-height: 20px;
+	font-family: @fos-basefont-content;
+}
+.fos-interview-content hr{
+	width: 70%;
+	display: block; 
+	height: 3px;
+    border: 0; 
+    border-top: 3px solid @fos-themebase-color;
+    margin: 1em 0; 
+    padding: 0;
+}
+.fos-interview a{
+	color: lighten(@fos-newsfeed-heading, 20%);
+	font-size: 160%;
+	text-decoration: none;
+	margin-left: 30px;
+	margin-right: 30px;
+	line-height: 20px;
+	font-family: @fos-basefont-heading;
+}
+.fos-news-feeds{
+	background: lighten(@fos-basefont-color, 90%) !important;
+	min-height: 200px;
+	float: left;
+}
+.fos-news-feeds-content{
+	margin: 10% 10%;
+	
+}
+.fos-news-feeds h2{
+	color: @fos-newsfeed-heading;
+	font-weight: 600;
+	font-size: 180%;
+	text-indent: 30px;
+	font-family: @fos-basefont-heading; 
+}
+.fos-news-feeds p{
+	color: lighten(@fos-basefont-color, 50%);
+	font-size: 100%;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+	width: 90%;
+	line-height: 20px;
+	font-family: @fos-basefont-content; 
+}
+.fos-news-feeds a{
+	color: lighten(@fos-newsfeed-heading, 20%);
+	font-size: 160%;
+	text-decoration: none;
+	margin-left: 30px;
+	margin-right: 30px;
+	line-height: 20px;
+	font-family: @fos-basefont-heading;
+}
+.fos-news-feeds hr{
+	width: 70%;
+	display: block; 
+	height: 3px;
+    border: 0; 
+    border-top: 3px solid @fos-newsfeed-heading;
+    margin: 1em 0; 
+    padding: 0;
+}
+.fos-interview, .news-feeds h3{
+	color: @fos-basefont-color;
+	font-family: @fos-basefont-content;
+}
+.fos-interview a:hover, .fos-news-feeds a:hover{
+	color: @fos-themebase-color;
+}
+//--------------------------------------------------------------------------------------------
+/* 	Thumb nail icon tabs, Product Tabs Area*/
+
+.fos-product{
+	width: 100%;
+	height: 0;
+	padding-bottom: 80%;
+	background: url('@{fos-images}thumb-bg.jpg') no-repeat;
+	background-size: 100% 100%;
+	clear: both;
+	position: relative;
+}
+.fos-product-tabs{
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	padding: 3% 5% 0% 5%;
+	height: 50%;
+	background: @fos-themebase-color;
+	opacity: 0.7;
+}
+.fos-tab-row{
+	width: 90%;
+	height: 50%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.fos-thumb{
+	width: 20%;
+	height: 100%;
+	float: left;
+	padding: 0;
+	text-align: center;
+	color: lighten(@fos-basefont-color, 100%);
+	cursor: pointer;
+	position: relative;
+	display: block;
+	font-family: @fos-basefont-heading;
+	font-size: @fos-basefont-size + .8em;
+}
+.fos-thumb-link{
+	width: 20%;
+	height: 100%;
+	float: left;
+	padding: 2%;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: @fos-basefont-heading;
+	font-size: @fos-basefont-size + .8em;
+}
+.fos-thumb img{
+	width: 78%;
+	height: 78%;
+	padding: 2% 2%;
+	clear: both;
+}
+.fos-odd-thumb{
+	background: darken(@fos-themebase-color, 10%);
+	opacity:0.7;
+	height: 100%;
+	width: 100%;
+}
+.fos-even-thumb{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+}
+
+.fos-odd-thumb p{
+	height: 18%;
+	width: 100%;
+	margin: 1% auto;
+}
+
+.fos-even-thumb p{
+	height: 18%;
+	width: 100%;
+	margin: 1% auto;
+}
+.fos-current{
+	background: lighten(@fos-basefont-color, 100%);
+	opacity: none !important;
+	height: 120%;
+	width: 100%;
+	padding: 4% 0%;
+	vertical-align: middle;
+	color: lighten(@fos-basefont-color, 100%);
+	font-family: @fos-basefont-button;
+	font-size: @fos-basefont-size + .2em;
+	font-weight: 700;
+	margin-top: -120%;
+	
+}
+.fos-current div.fos-button-wrapper{
+	width: 100%;
+	height: 70%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	
+}
+.fos-current div.fos-button-wrapper button{
+	margin-top: 15%;
+	background: @fos-button-bg;
+	padding: 10px;
+	width: 80%;
+	height: 30%;
+	border: none !important;
+	font-family: @fos-basefont-button;
+	color: lighten(@fos-basefont-color, 100%);
+	font-size: @fos-basefont-size - .5em;
+	-webkit-transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
+    transition: background-color 0.8s ease;
+}
+.fos-current div.fos-button-wrapper button:hover{
+	background: @fos-button-hover;
+}
+.fos-current {
+	transform: rotateY(180deg);
+}
+/*Flipper*/
+.fos-flip-container {
+	perspective: 1000;
+}
+.fos-flip-container:hover .fos-flipper, .fos-flip-container.hover .fos-flipper {
+		transform: rotateY(180deg);
+	}
+
+.fos-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	height: 100%;
+}
+.fos-odd-thumb,.fos-even-thumb, .fos-current {
+	backface-visibility: hidden;
+	top: 0%;
+	left: 0;
+}
+.fos-odd-thumb, .fos-even-thumb {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+//----------------------------------------------------------------------------------------------------------
+// Video demonstration section
+
+.fos-service-row{
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	background: @fos-video-demo;
+	clear: both;
+}
+.fos-description{
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	position: relative;
+}
+.fos-selection{
+	width: 100%;
+	height: 0;
+	padding-bottom: 50%;
+	background-color: lighten(@fos-basefont-color, 100%);
+}
+.fos-service-selection{
+	color: @fos-basefont-color;
+	height: 20%;
+	margin-top: .5%;
+	margin-bottom: .5%;
+	font-family: @fos-basefont-heading;
+	clear: both;
+}
+.fos-service-selection:hover{
+	transform: scale(1.02); 
+	transition-property: all;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+.fos-service-selection div.fos-icons{
+	margin-left: 2%;
+	padding: 2%;
+	width: 20%;
+	float: left;
+}
+.fos-service-selection div.fos-icons div.fos-enterpr{
+	width: 100px;
+	height: 100px;
+	background: url('@{fos-images}video-thumb.png') no-repeat;
+	background-position: 0 0;
+}
+.fos-service-selection div.fos-icons div.fos-ranchising{
+	width: 100px;
+	height: 100px;
+	background: url('@{fos-images}video-thumb.png') no-repeat;
+	background-position: -300px 0;
+}
+.fos-service-selection div.fos-icons div.fos-market{
+	width: 100px;
+	height: 100px;
+	background: url('@{fos-images}video-thumb.png') no-repeat;
+	background-position: -200px 0;
+}
+.fos-service-selection div.fos-icons div.fos-employment{
+	width: 100px;
+	height: 100px;
+	background: url('@{fos-images}video-thumb.png') no-repeat;
+	background-position: -100px 0;
+}
+.fos-service-selection div.fos-icons div.fos-service{
+	width: 100px;
+	height: 100px;
+	background: url('@{fos-images}video-thumb.png') no-repeat;
+	background-position: -400px 0;
+}
+.fos-active-video{
+	width: 0; 
+	height: 0; 
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-right: 35px solid @fos-video-demo;
+}
+
+.fos-service-selection div.fos-details{
+	width: 75%;
+	min-height: 100%;
+	float: right;
+}
+
+.fos-service-selection div.fos-details h3{
+	margin-top: 5%;
+	margin-right: 15%;
+}
+
+.fos-service-selection div.fos-details p{
+	margin: 1% 15% 1% 0%;
+	font-size: @fos-basefont-size +.4em;
+}
+.fos-description-back{
+	margin: 10% 10% 10% 20%;
+	width: 55%;
+	height: 80%;
+	overflow: hidden;
+	background: url('@{fos-images}webpage-16.png') no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+/*Video content Wrapper */
+.fos-video-container {
+    position: relative;
+    top: 10%;
+    left: 6%;
+    width: 88%;
+    height: 80%;
+    padding: 10%;
+    overflow: hidden;
+}
+.fos-video-container video, 
+.fos-video-container iframe,
+.fos-video-container object,
+.fos-video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+//----------------------------------------------------------------------------------------
+
+/*Food Business Join and Search*/
+.fos-food-business{
+	width: 100%;
+	height: 0;
+	padding-bottom: 45%;
+	background: @fos-themebase-color;
+	color: lighten(@fos-basefont-color, 100%) !important;
+	clear: bottom;
+	overflow: hidden;
+}
+.fos-food-business h2{
+	font-size: @fos-basefont-size + 1em;
+	font-family: @fos-business-tab;
+	position: absolute;
+	top: 130px;
+	text-align: center;
+	left: 35%;
+}
+.fos-business-tabs{
+	position: relative;
+	width: 100%;
+	background: transparent;
+}
+.fos-business-tabs a h2{
+	text-decoration: none;
+	color: lighten(@fos-basefont-color, 100%) !important;
+}
+.fos-business-tabs a:hover{
+	text-decoration: none;
+	color: lighten(@fos-basefont-color, 100%) !important;
+}
+.fos-business-join{
+	position: absolute;
+	margin-top: 5%;
+	top: 10%;
+	left: 42%;
+	background: url('@{fos-images}business-tab.png') no-repeat;
+	background-position: -150px 0;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+}
+.fos-business-post{
+	position: absolute;
+	margin-top: 30%;
+	top: 10%;
+	left: 5%;
+	background: url('@{fos-images}business-tab.png') no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+}
+.fos-business-search{
+	position: absolute;
+	margin-top: 30%;
+	top: 10%;
+	right: 5%;
+	background: url('@{fos-images}business-tab.png') no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	clear: both;
+}
+.fos-business-left{
+	position: absolute;
+	margin-top: 30%;
+	top: 5%;
+	left: 100%;
+	background: url('@{fos-images}business-arrow.png') no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	width: 110px;
+	height: 50px;
+}
+.fos-business-right{
+	position: absolute;
+	margin-top: 30%;
+	top: 5%;
+	right: 65%;
+	background: url('@{fos-images}business-arrow.png') no-repeat;
+	background-position: -135px 0;
+	background-size: cover;
+	width: 150px;
+	height: 50px;
+}
+.fos-business-desc{
+	position: absolute;
+	margin-top: 20%;
+	top: 5%;
+	left: -330%;
+	background: transparet;
+	text-align: center;
+	font-size: @fos-basefont-size + 1em;
+	font-family: @fos-business-tab;
+	width: 300px;
+	height: 100px;
+}
+.fos-business-desc p{
+	font-size: @fos-basefont-size - .5em;
+}
+.fos-business-tabs button{
+	position: absolute;
+	margin-top: 130%;
+	top: 5%;
+	right: 170%;
+	background: @fos-video-demo !important;
+	border: 1px solid lighten(@fos-video-demo, 100%);
+	text-align: center;
+	font-size: @fos-basefont-size + 1em;
+	font-family: @fos-basefont-button;
+	width: 500px;
+	height: 70px;
+	margin-bottom: 5%;
+}
+.fos-business-tabs button:hover{
+	background: darken(@fos-video-demo, 10%) !important;
+}
+.fos-business-join h2:hover{
+	transform: scale(1.1); 
+	transition-property: all;
+	transition-duration: .5s;
+	cursor: pointer;
+}
+.fos-business-post h2:hover{
+	transform: scale(1.1); 
+	transition-property: all;
+	transition-duration: .5s;
+	cursor: pointer;
+}
+.fos-business-search h2:hover{
+	transform: scale(1.1); 
+	transition-property: all;
+	transition-duration: .5s;
+	cursor: pointer;
+}
+//----------------------------------------------------------------------------------------
+
+// Footer Section
+.fos-how-work{
+	background: darken(@fos-howwork, 30%);
+	min-height: 100px;
+	overflow: hidden;
+	padding: 3% 30px 3% 7%;
+	color: #fff;
+	font-family: @fos-basefont-heading;
+	font-size: @fos-basefont-size + .3em;
+}
+.fos-right-border{
+	text-align: justify;
+	font-size: 120%;
+}
+.fos-left-border{
+	height: 100%;
+	border-left: 3px solid lighten(@fos-basefont-color, 100%);
+	
+}
+.fos-left-border button{
+	margin: 10% 15%;
+	padding: 1% 10% 2% 10%;
+	background-color: @fos-button-bg;
+	border: 1px solid lighten(@fos-basefont-color, 100%);
+	font-weight: 500;
+	text-align: center;
+	-webkit-transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
+    transition: background-color 0.8s ease;
+}
+
+.fos-logo-footer{
+	overflow: hidden;
+	padding: .5% 5%;
+	margin-left: 6%;
+}
+.fos-footer-brand{
+	width: 150px;
+	height: 60px;
+	background: url('@{fos-images}logo.png') no-repeat ;
+	background-size: 100% 100%;
+}
+.fos-link-footer{
+	border-top: 3px solid lighten(@fos-basefont-color, 85%);
+	border-bottom: 3px solid lighten(@fos-basefont-color, 85%);
+	min-height: 100px;
+	padding: 2% 5%;
+	clear: both;
+	background: lighten(@fos-basefont-color, 95%);
+}
+.fos-link-footer ul{
+	list-style: none;
+	font-weight: 600;
+	padding-left: 0px;
+}
+.fos-link-footer ul li{
+	padding-left: 0px;
+}
+.fos-social-copy{
+	width: 100%;
+	height: 0;
+	padding-bottom: 20%;
+	padding-top: 5%;
+	text-align: center;
+	vertical-align: middle;
+}
+.fos-social-copy ul{
+	list-style: none;
+	margin: 2%;
+	padding: 0;
+}
+.fos-social-copy ul li{
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.fos-social-copy ul li:hover{
+	box-shadow: 0 0 5px #fff;
+	border: 1px solid #fff;
+}
+
+.fos-facebook{
+	background: url('@{fos-images}social-icon.png') no-repeat;
+	background-position: 0 0;
+}
+.fos-google{
+	background: url('@{fos-images}social-icon.png') no-repeat;
+	background-position: -40px 0;
+}
+.fos-linkedin{
+	background: url('@{fos-images}social-icon.png') no-repeat;
+	background-position: -80px 0;
+}
+.fos-pintrest{
+	background: url('@{fos-images}social-icon.png') no-repeat;
+	background-position: -120px 0;
+}
+.fos-tweeter{
+	background: url('@{fos-images}social-icon.png') no-repeat;
+	background-position: -160px 0;
+}
+.fos-social-copy div.fos-copyright{
+	margin: 2%;
+	text-align: center;
+	color: lighten(@fos-basefont-color, 75%);
+	font-size: 70%;
+	font-family: @fos-footer-links;
+}
+.fos-social-copy div.fos-webmaster{
+	margin: 2%;
+	text-align: center;
+	color: lighten(@fos-basefont-color, 75%);
+	font-size: 90%;
+	font-family: @fos-footer-links;
+}
+.fos-app-footer{
+	background: lighten(@fos-basefont-color, 30%);
+	border-top: 3px solid lighten(@fos-basefont-color, 20%);
+	border-bottom: 3px solid lighten(@fos-basefont-color, 20%);
+	color: lighten(@fos-basefont-color, 100%);
+	min-height: 100px;
+	padding: 3% 5%;
+	clear: both;
+}
+.fos-app-footer ul{
+	list-style: none;
+	font-weight: 600;
+	padding-left: 0px;
+}
+.fos-app-footer ul li{
+	padding-left: 0px;
+}
+.fos-app-social{
+	width: 100%;
+	height: 0;
+	padding-bottom: 2%;
+	text-align: right;
+	vertical-align: middle;
+}
+.fos-app-social ul{
+	list-style: none;
+	margin: 2%;
+	padding: 0;
+}
+.fos-app-social ul li{
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.fos-app-social ul li:hover{
+	box-shadow: 0 0 5px #fff;
+	border: 1px solid #fff;
+}
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+/*Scroll to Top*/
+.fos-scrollToTop{
+	width:60px; 
+	height:60px;
+	border-radius: 50%;
+	position:fixed;
+	background-color: @fos-themebase-color !important;
+	top:85%;
+	z-index: 5000;
+	right:2%;
+	display:none;
+	background: url('@{fos-images}scroll-top.png') no-repeat 0px 0px;
+	background-size: 100% 100%;
+}
+.fos-scrollToTop:hover{
+	cursor: pointer;
+	background-color: @fos-button-bg !important;
+}
+
+//----------------------------------------------------------------------------------------------------------------------------
+// Login background overlay Login modal window styles
+#fos-lean-overlay {
+    position: fixed;
+    z-index:5000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+#fos-loginmodal {
+  width: 300px;
+  padding: 15px 20px;
+  background: lighten(@fos-basefont-color, 100%);
+  border-radius: 6px;
+  box-shadow: 0 1px 5px lighten(@fos-basefont-color, 90%);
+}
+
+//------------------------------------------------------------------------------------------------------------------------------
+//Login Form customization
+#fos-login-form{
+	position: relative;
+	margin: 50px auto;
+	width: 500px;
+	height: 310px;
+	background: lighten(@fos-basefont-color, 100%);
+}
+#fos-login-form div.fos-close{
+	position: absolute;
+	top: -15px;
+	z-index: 1000;
+	left: 480px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url('@{fos-images}close-button.png') no-repeat;
+	background-size: 100%;
+}
+#fos-login-form fieldset{
+	padding: 10px;
+	box-shadow: 0px 0px 10px lighten(@fos-basefont-color, 80%);
+	height: 100%;
+	border-radius: 5px;
+}
+#fos-login-form h2{
+	color: lighten(@fos-basefont-color, 30%);
+	font-weight: 700;
+	width: 120px;
+	height: 50px;
+	margin-left: 180px;
+	padding: 1.5% 6%;
+	margin-top: -19px;
+	color: lighten(@fos-basefont-color, 100%);
+	font-size: 2em;
+	text-shadow: 2px 2px 4px @fos-basefont-color;
+	background: url('@{fos-images}login-bagage.png') no-repeat;
+}
+#fos-login-form button{ /* Diagonal gradient for background */
+	background: repeating-linear-gradient( 
+	  -55deg,
+	  lighten(@fos-basefont-color, 50%),
+	  lighten(@fos-basefont-color, 50%) 20px,
+	  lighten(@fos-basefont-color, 70%) 20px,
+	  lighten(@fos-basefont-color, 70%) 30px
+	);
+	color: lighten(@fos-basefont-color, 100%);
+	font-weight: 700;
+	text-align: center;
+	border: none;
+	width: 100%;
+	padding: 0;
+	height: 45px;
+	border-radius: 0px !important;
+	font-family: @fos-login-button-font;
+	font-size: @fos-basefont-size + .5em;
+}
+#fos-login-form button:hover{
+	background: repeating-linear-gradient(
+	  -55deg,
+	  @fos-button-bg,
+	  @fos-button-bg 20px,
+	  darken(@fos-button-bg, 5%) 20px,
+	  darken(@fos-button-bg, 5%) 30px
+	);
+	text-shadow: 2px 2px 5px lighten(@fos-basefont-color, 0%);
+	transition: background 0.8s ease;
+	border-radius: 0px !important;
+}
+#fos-login-form h2{
+	font-family: @fos-basefont-heading;
+}
+#fos-login-form form{
+	margin: 0px;
+	padding: 0px;
+}
+#fos-login-form .fos-login-fields{
+	margin: 0px;
+	padding: 0px;
+	height: 180px;
+}
+#fos-login-form .fos-login-cookie{
+	height: 30px;
+	color: lighteen(@fos-basefont-color, 20%);
+}
+#fos-login-form .fos-forgot-credential{
+	float: right;
+	font-weight: 600;
+	text-align: right;
+	color: #6d6d6d;
+}
+#fos-login-form .fos-forgot-credential a{
+	text-decoration: none;
+	color: lighteen(@fos-basefont-color, 0%) !important;
+}
+.fos-login-fields input[type="email"]{
+	width: 350px;
+	float: right;
+	padding: 10px;
+	height: 50px !important;
+	margin: 10px;
+	font-size: @fos-basefont-size;
+	border-radius: 0px !important;
+}
+.fos-login-fields input[type="password"]{
+	width: 350px;
+	float: right;
+	padding: 10px;
+	height: 50px !important;
+	margin: 10px;
+	font-size: @fos-basefont-size;
+	border-radius: 0px !important;
+	font-style: italic;
+}
+#fos-login-form .fos-login-fields label[for="inputEmail"]{
+	position: absolute;
+	top: 12px;
+	left: -17px;
+	width: 130px;
+	float: left;
+	padding: 15px 30px;
+	height: 50px;
+	font-size: @fos-basefont-size - .1em;
+	color: lighteen(@fos-basefont-color, 100%) !important;
+	background: url('@{fos-images}login-label-bg.png') no-repeat;
+}
+#fos-login-form .fos-login-fields label[for="inputPassword"]{
+	position: absolute;
+	top: 83px;
+	left: -17px;
+	width: 130px;
+	float: left;
+	padding: 15px 30px;
+	height: 50px;
+	font-size: @fos-basefont-size - .1em;
+	color: lighteen(@fos-basefont-color, 100%) !important;
+	background: url('@{fos-images}login-label-bg.png') no-repeat;
+} 
+
+//=============================== Registration Form ===============================================
+#fos-browse-dd button{
+	background: url('@{fos-images}webpage-31.png') no-repeat !important;
+  	background-size: 100% 100% !important;
+	height: 40px !important;
+	width: 250px !important;
+	margin-top: 13px;
+	border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+	color: lighten(@fos-form-base-color, 40%) !important;
+	float: left;
+	text-align: left;
+}
+#browse input{
+	float: left;
+	width: 74.5%;
+	margin-left: -10%;
+}
+#browse button{
+	float: right;
+	margin-right: 10%;
+	background: url('@{fos-images}webpage-31.png') no-repeat !important;
+  	background-size: 100% 100% !important;
+}
+.fos-reg-header{
+	margin-top: 25px;	
+}
+.fos-reg-header h1{
+	color: lighteen(@fos-basefont-color, 15%);
+	font-family: @fos-basefont-heading;
+}
+.fos-reg-header p{
+	color: lighteen(@fos-basefont-color, 15%);
+	font-family: @fos-basefont-button;
+}
+.fos-user-type h4{
+	padding: 2% 3%;
+	color: lighteen(@fos-basefont-color, 100%);
+	vertical-align: middle;
+}
+.fos-active-user-type{
+	background: @fos-active-user;
+	padding: 2% 3%;
+	color: lighteen(@fos-basefont-color, 100%) !important;
+	vertical-align: middle;
+}
+.fos-inactive-user-type{
+	background: darken(@fos-header-bg, 30%) !important;
+	padding: 2% 3%;
+	vertical-align: middle;
+}
+.fos-inactive-user-type span, .fos-active-user-type span{
+	font-size: @fos-basefont-size + 1.2em;
+	z-index: 500;
+}
+
+.fos-user-type-indiv{
+	padding-bottom: 1%;
+}
+.fos-user-type-corp p{
+	font-family: @fos-basefont-content;
+	padding: 2% 5% 2% 3%;
+	text-align: justify;
+}
+.fos-user-type-indiv p{
+	font-family: @fos-basefont-content;
+	padding: 2% 5% 2% 3%;
+	text-align: justify;
+}
+
+.fos-user-form { 
+	padding:2% 1% 2% 5%; 
+	clear: both;
+}
+
+.fos-user-form .field { 
+	 width: 100%;
+	 clear: both;
+}
+.fos-ut-description{
+	padding-bottom: 1%;
+}
+.fos-ut-description p{
+	font-size: 90%;
+}
+
+.fos-user-form .fos-field label { 
+	display:inline-block; 
+	width:25%;
+	height: 40px;
+	padding: 0 0;
+	vertical-align: middle;
+	text-align: left;
+	font-weight: normal;
+	background: transparent;
+	border: none;
+	font-family: inherit;
+}
+
+.fos-user-form .fos-field input { 
+	display:inline-block; 
+	width:73%;
+	height: 40px;
+	padding: 5px 0;
+}
+.fos-user-form .fos-field input[type="radio"] { 
+	display:inline; 
+	width:5%;
+	float: left;
+	height: 40px;
+	margin-left: 0;
+	text-align: left;
+}
+
+.fos-ut-description{
+	background: #fff;
+	padding-bottom: 3%;
+	margin-bottom: 2%;
+}
+.fos-user-form .fos-field input[type="submit" ] { 
+	padding: 1%;
+	font-weight: 700;
+	width: 36.33%;
+	font-family: inherit;
+	border: 2px solid #d7d8d9;
+	height: 50px;
+	background: #bdbec1;
+}
+input[type="submit"]:disabled {
+    background: #dfe1e0;
+    color: #ebedec;
+} 
+.fos-user-form .fos-field input[type="reset" ] { 
+	padding: 1%;
+	font-weight: 700;
+	width: 36.33%;
+	font-family: inherit;
+	border: 2px solid #d7d8d9;
+	height: 50px;
+	background: #bdbec1;
+}
+.fos-user-form .fos-field input[type="submit"]:hover { 
+	background-color: #28b674;
+	color: #fff;
+	-webkit-transition: background-color 1s ease;
+	    -moz-transition: background-color 1s ease;
+	    -o-transition: background-color 1s ease;
+	    transition: background-color 1s ease;
+}
+.fos-user-form .fos-field input[type="reset"]:hover { 
+	background-color: #28b674;
+	color: #fff;
+	-webkit-transition: background-color 1s ease;
+	    -moz-transition: background-color 1s ease;
+	    -o-transition: background-color 1s ease;
+	    transition: background-color 1s ease;
+}
+.fos-header-marker{
+	clear: both;
+	height: 60px;
+	color: lighteen(@fos-basefont-color, 100%) !important;
+}
+.fos-header-marker span{
+	width: 5%;
+	float: left;
+	padding: 5px;
+	color: @fos-header-bg !important;
+}
+.fos-header-marker p{
+	width: 90%;
+	color: @fos-header-bg !important;
+	font-size: 1.5em;
+	margin-top: -20px;
+	margin-left: 20px;
+	line-height: 60px;
+	float: left;
+}
+
+//=================================Buyesr and Seller Form==========================================
+
+/*Seller/Buyer  Form*/
+.fos-user-profile{
+	cursor: pointer;
+}
+.fos-seller-notification{
+	height: 70px;
+	padding: 0 1%;
+	float: left;
+	width: 100%;
+	margin-left: 1% 5%;
+	position: relative;
+	z-index: 0;
+}
+.fos-seller-notification ul{
+	list-style: none;
+	padding: .8%;
+
+}
+.fos-seller-notification ul li{
+	display: inline-block;
+	padding: 2%;
+	padding: 0 2%;
+	border-right: 2px solid lighten(@fos-form-base-color, 80%);
+	height: 100%;
+	width: 110px;
+	position: relative;
+}
+.fos-seller-notification ul li div.contact{
+	height: 45%;
+	width: 50%;
+	margin: 0 0 0 10%;
+}
+.fos-seller-notification ul li img{
+	height: 45%;
+	width: 50%;
+	margin: 0 0 0 10%;
+}
+.fos-seller-notification ul li p{
+	font-size: .5em;
+	font-weight: 700;
+	color: lighten(@fos-form-base-color, 50%);
+	text-align: center;
+}
+.fos-seller-notification ul li:last-child{
+	border-right: none;
+	background: lighten(@fos-form-base-color, 80%);
+	margin-left: 2%;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 7%;
+}
+.fos-seller-notification ul li:last-child span.fos-down-arrow{
+	position: absolute;
+	background: none !important;
+	top: 32%;
+	left: 110%;
+	width: 10px; 
+	margin: 0;
+	padding: 0;
+	height: 20px; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid lighten(@fos-form-base-color, 80%);
+}
+
+
+.fos-seller-notification ul li:last-child img{
+	width: 120%;
+	height: 100%;
+	margin-left: -10%;
+}
+.fos-seller-notification ul li span{
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	background: @fos-header-banner-color;
+	background-size: 70% 70%;
+	min-width: 25%;
+	height: 40%;
+	padding: 2px;
+	color: lighten(@fos-form-base-color, 100%);
+	text-align: center;
+	font-weight: 600;
+}
+.fos-seller-notification ul ul li:last-child{
+	border: none;
+	background: none;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 2% 5%;
+}
+
+.fos-seller-notification ul ul{
+	background: @fos-form-base-color;
+	opacity: 0.8;
+	border-radius: 0 0 10px 10px;
+	position: absolute;
+	top: 125%;
+	left: -140%;
+	margin-right: -30%;
+	list-style: none;
+	min-height: 100px;
+	display: none;
+}
+.fos-seller-notification ul ul div.fos-up-marker {
+	position: absolute;
+	top: -8%;
+	right: 20%;
+	width: 0; 
+	height: 0;
+	margin-left: 70px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid @fos-form-base-color;
+	opacity: 0.8;
+}
+.fos-seller-notification ul ul li{
+	border: none;
+	display: inline-block;
+	width: 90%;
+	line-height: 30px;
+	padding: 2% 5%;
+	border-bottom: 1px solid lighten(@fos-form-base-color, 85%);
+	color: lighten(@fos-form-base-color, 100%);
+	font-weight: 500;
+}
+.fos-seller-notification ul ul li:hover{
+	color: @fos-header-banner-color;
+	cursor: pointer;
+	text-shadow: 1px 1px 2px lighten(@fos-form-base-color, 100%);
+}
+.fos-seller-notification ul ul li.fos-action-icon a{
+	font-family: @fos-form-base-font;
+	padding-left: 10%;
+	text-decoration: none;
+	color: lighten(@fos-form-base-color, 100%);
+	cursor: pointer;
+}
+
+.fos-user-ribbon{
+	position: relative;
+	height: 100px;
+	background: @fos-header-banner-color;
+	margin-top: 120px;
+}
+.fos-user-ribbon span{
+	position: absolute;
+	top: 100px;
+	z-index: -100;
+	left: 150px;
+	width: 0; 
+	height: 0; 
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid @fos-header-banner-color;
+	background-size: 100% 100%;
+}
+.fos-app-form-position{
+	margin: 5% 10%;
+	color: lighten(@fos-form-base-color, 40%);
+}
+.fos-app-form-position h4{
+	padding: 1% 0;
+	font-size: @fos-basefont-size + .5em;
+	letter-spacing: 3px;
+}
+#phone-number{
+	width: 95% !important;
+}
+#buyer-logo{
+	text-align: center;
+	vertical-align: middle;
+}
+.fos-buyer-logo{
+	width: 130px; 
+	height: 130px; 
+	background: lighten(@fos-form-base-color, 100%);
+	border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+	overflow: hidden;
+}
+.fos-buyer-logo img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.fos-user-wrapper{
+	float: right;
+	margin: 1.5% 5%;
+	height: 80px;
+	padding: 5%;
+	width: 80px;
+	border-radius: 50%;
+	background: lighten(@fos-form-base-color, 100%);
+	position: relative;
+}
+.fos-user-wrapper img{
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	margin: 0;
+	padding: 0;
+	width: 60%;
+	height: 60%;
+}
+.fos-mplace{
+	margin-left: -2%;
+	height: 100%;
+	width: 90%;
+	overflow: hidden;
+}
+.fos-mplace div h1{
+	color: lighten(@fos-form-base-color, 100%);
+	font-size: @fos-basefont-size + 2.2em;
+	line-height: 70px;
+	text-align: center;
+	font-family: @fos-banner-font;
+}
+.fos-mplace div>h1{
+	border-right: 2px solid lighten(@fos-form-base-color, 100%);
+	height: 90%;
+}
+.fos-mplace div h4{
+	color: lighten(@fos-form-base-color, 100%);
+	font-size: @fos-basefont-size + 1em;
+	line-height: 100px;
+	text-align: left;
+	font-family: @fos-banner-font;
+}
+#browse button{
+	background: url('@{fos-images}webpage-31.png') no-repeat;
+	background-size: 100% 100%;
+	border: 1px solid lighten(@fos-form-base-color, 80%);
+	font-weight: 600;
+	width: 40px;
+}
+
+
+//===================================App sub header ===============================================
+
+.fos-app-header{
+	background: @fos-app-header-bg !important;
+	box-shadow: 2px 5px 8px lighten(@fos-basefont-color, 40%);
+	height: 70px;
+}
+
+//===============================Default Radio and checkbox Customization =========================
+
+/*Radio Button Customization*/
+input[type="radio"]{
+	display: none !important; 
+}
+input[type="radio"] +label{
+	color: #000;
+	font-weight: 800;
+	vertical-align: middle;
+}
+input[type="radio"] + label span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: -5px 4px 0px 0px;
+	vertical-align: middle;
+	background: url('@{fos-images}radio-check-button.png') -30px top no-repeat;
+	cursor: pointer;
+}
+input[type="radio"]:checked + label span{
+	background: url('@{fos-images}radio-check-button.png') 0px top no-repeat;
+}
+/*Checkbox Customization*/
+input[type="checkbox"]{
+	display: none !important; 
+	width: 100%;
+}
+input[type="checkbox"] +label{
+	color: #000;
+	vertical-align: middle;
+}
+input[type="checkbox"] + label span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: -5px 4px 0px 0px;
+	vertical-align: middle;
+	background: url('@{fos-images}radio-check-button.png') -90px top no-repeat;
+	cursor: pointer !important;
+	color: #6d6d6d !important;
+}
+input[type="checkbox"]:checked + label span{
+	background: url('@{fos-images}radio-check-button.png') -60px top no-repeat;
+	color: #6d6d6d !important;
+	cursor: pointer !important;
+}
+/*Checkbox Customization*/
+.fos-message-header input[type="checkbox"]{
+	display: none !important; 
+	width: 100%;
+}
+.fos-message-header input[type="checkbox"] +label{
+	color: #000;
+	vertical-align: middle;
+}
+.fos-message-header input[type="checkbox"] + label span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 10px 4px 0px 10px;
+	vertical-align: middle;
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: 0 0;
+	cursor: pointer !important;
+}
+.fos-message-header input[type="checkbox"]:checked + label span{
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: -20px 0;
+}
+.fos-msg-listing input[type="checkbox"]{
+	display: none !important; 
+	width: 100%;
+}
+.fos-msg-listing input[type="checkbox"] +label{
+	color: #000;
+	vertical-align: middle;
+}
+.fos-msg-listing input[type="checkbox"] + label span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 10px 4px 0px 0px;
+	vertical-align: middle;
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: 0 0;
+	cursor: pointer !important;
+}
+.fos-msg-listing input[type="checkbox"]:checked + label span{
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: -20px 0;
+}
+// Multi Select
+.fos-multiselect input[type="checkbox"]{
+	top: 0;
+	right: 0;
+}
+.fos-multiselect input[type="checkbox"]{
+	display: none !important; 
+	width: 100%;
+	float: right;
+}
+.fos-multiselect input[type="checkbox"] +label{
+	color: #000;
+	vertical-align: middle;
+}
+.fos-multiselect input[type="checkbox"] + label span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	align-content: right;
+	margin: 0 4px 0px 5px;
+	vertical-align: middle;
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: 0 0;
+	cursor: pointer !important;
+}
+.fos-multiselect input[type="checkbox"]:checked + label span{
+	background: url('@{fos-images}radio-check-button-inbox.png')no-repeat;
+	background-position: -20px 0;
+}
+
+
+
+
+
+.fos-contact-select input[type="checkbox"]{
+	display: auto;
+	width: 100%;
+}
+//================================ Default Rules Over Writing===========================
+
+/*Importand over writings*/
+.btn {
+	border-color: darken(@fos-button-bg, 10%) !important;
+}
+button{
+	border-radius: 0px !important;
+	background-color: @fos-app-btn-color !important;
+}
+button:hover{
+	background-color: lighten(@fos-app-btn-color, 15%) !important;
+}
+input[type="text"], input[type="email"], input[type="tel"]{
+	height: 40px !important;
+}
+input:focus{
+	box-shadow: 2px 2px 4px #bbb !important;
+	border: 1px solid @fos-app-btn-color !important;
+}
+textarea{
+	border-radius: 0 !important;
+	resize: none!important;
+	font-family: inherit;
+}
+
+textarea:focus{
+	box-shadow: 2px 2px 4px #bbb !important;
+	border: 1px solid @fos-app-btn-color !important;
+}
+.control-label{
+	text-align: left !important;
+}
+.form-horizontal{
+	width: 80% !important;
+}
+.fos-select select{
+   background: transparent !important;
+   width: 170px !important;
+   border: 0 !important;
+   border-radius: 0 !important;
+   height: 40px !important;
+   -webkit-appearance: none !important;
+   margin-left: -20px;
+}
+
+.fos-select select:focus{
+   box-shadow: none !important;
+   border: none !important;
+}
+.fos-select {
+   margin-left: 2.4%;
+   width: 22.5% !important;
+   height: 40px !important;
+   overflow: hidden !important;
+   background: url('@{fos-images}select.png') no-repeat right !important;
+   border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+   cursor: pointer !important;
+   background-color: lighten(@fos-form-base-color, 100%) !important;
+}
+.fos-s-su-selector select{
+   background: transparent !important;
+   width: 120% !important;
+   border: 0 !important;
+   text-align: center !important;
+   border-radius: 0 !important;
+   height: 40px !important;
+   -webkit-appearance: none !important;
+   margin-left: -20px;
+}
+
+.fos-s-su-selector select:focus{
+   box-shadow: none !important;
+   border: none !important;
+}
+.fos-s-su-selector {
+   margin-left: 2.4%;
+   width: 70% !important;
+   height: 40px !important;
+   overflow: hidden !important;
+   background: url('@{fos-images}select.png') no-repeat right !important;
+   border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+   cursor: pointer !important;
+   background-color: lighten(@fos-form-base-color, 100%) !important;
+}
+.fos-select-target {
+   margin-left: 2%;
+   width: 52% !important;
+}
+.fileUpload {
+	background: url('@{fos-images}upload.png') no-repeat right !important;
+	position: relative !important;
+	width: 130px !important;
+	border-radius: 0 !important;
+	border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+	height: 40px !important;
+	background-color: lighten(@fos-form-base-color, 100%) !important;
+	display: inline-block !important;
+		
+}
+.fileUpload span {
+	margin-left: -30% !important;	
+}
+.fileUpload input.upload {
+	position: absolute;
+	font-size: 20px;
+	cursor: pointer;
+	top:0;
+	left:0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 130px !important;
+	height: 40px !important;
+	border: 1px solid lighten(@fos-form-base-color, 80%) !important;
+}
+#uploadBtn{
+	border: 1px solid lighten(@fos-form-base-color, 80%);
+}
+#uploadFile{
+	width: 50%;
+}
+input, button {
+  height: 40px;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit; }
+  input[disabled], button[disabled] {
+    background-color: lighteen(@fos-basefont-color, 95%); }
+
+input, select {
+  border: 1px solid @fos-file-upload;
+  width: 300px;
+  font-size: @fos-basefont-size - .3em;
+}
+
+button {
+  color: lighteen(@fos-basefont-color, 95%);
+  background-color: lighten(@fos-file-upload, 90%);
+  border: 1px solid @fos-file-upload; }
+  button:hover {
+    background-color: lighten(@fos-file-upload, 90%);
+    border-color: @fos-file-upload;
+    cursor: pointer; }
+
+.fos-button-position{
+	margin-top: 3% !important;
+	padding-top: 2% !important;
+}
+.nav-tabs li{
+	background: lighten(@fos-tabnavigation, 80%);
+	border: 1px solid lighten(@fos-tabnavigation, 60%);
+	border-radius: 10px 10px 0 0;
+	padding: 0 1.5%;
+	min-width: 150px;
+	overflow: hidden;
+	text-align: center;
+}
+.nav-tabs li:hover{
+	background: lighten(@fos-tabnavigation, 100%) !important;
+}
+.nav-tabs li a{
+	color: lighten(@fos-tabnavigation, 20%);
+}
+.nav-tabs li a:hover{
+	background: none !important;
+}
+.nav-tabs li.active{
+	background: lighten(@fos-tabnavigation, 100%);
+	padding: 1px;
+}
+.nav-tabs li.active a{
+	border: none !important;
+}
+.tab-pane{
+	height: 600px;
+	overflow: hidden;
+	border-top: .5px solid lighten(@fos-tabnavigation, 60%);
+	border-right: 1px solid lighten(@fos-tabnavigation, 60%);
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 60%);
+}
+.tabbable{
+	margin-left: 0;
+}
+.icon-bell{
+	font-size: @fos-basefont-size + 1.2em;
+}
+.dropdown button{
+	border: none !important;
+	background: lighten(@fos-tabnavigation, 100%) !important;
+	color: lighten(@fos-tabnavigation, 70%) !important;
+	width: 120px;
+}
+.dropdown ul{
+	border-radius: 0;
+}
+.dropdown ul li a{
+	padding: 5px 10px !important;
+	margin: 0 !important;
+	font-size: @fos-basefont-size;
+	color: lighten(@fos-tabnavigation, 70%);
+}
+//================================Inbox Customization===================================
+
+.fos-inbox-notification span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: @fos-inbox-header-bg;
+	color: lighten(@fos-inbox-header-bg, 100%);
+	top: 15%;
+	left: 55%;
+	//font-size: @fos-basefont-size;
+	font-weight: 700;
+}
+.fos-inbox-container{
+	position: relative;
+	width: 90%;
+	min-height: 100px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+.fos-inbox-sidebar{
+	margin-top: 43px;
+	width: 100%;
+	border: 1px solid lighten(@fos-tabnavigation, 60%);
+	min-height: 601px;
+}
+.fos-inbox-sidebar div.fos-inbox-header{
+	width: 100%;
+	height: 50px;
+	background: @fos-inbox-header-bg;
+}
+.fos-inbox-sidebar div.fos-inbox-header span{
+	position: absolute;
+	top: 93px;
+	left: 40px;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid @fos-inbox-header-bg;
+}
+.fos-inbox-active-pan{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: right;
+	margin: 5px;
+	background: @fos-active-pan;
+}
+.fos-inbox-active-pan i{
+	text-align: center;
+	color: @fos-inbox-header-bg;
+	padding: 5px;
+	font-size: @fos-basefont-size + .8em;
+	width: 40px !important;
+	height: 40px !important;
+}
+.fos-inbox-active-pan .fos-pan-menu{
+	margin: 10px;
+	background: #000;
+	width: 100%;
+	height: 150px;
+}
+.fos-pan-menu ul{
+	margin: 40px 5px 10px -10px;
+	width: 100%;
+	list-style: none;
+}
+.fos-pan-menu ul li{
+	padding: 5px 0;
+	color: lighten(@fos-tabnavigation, 40%);
+	display: block !important;
+}
+.fos-pan-menu ul li a{
+	color: lighten(@fos-tabnavigation, 40%);
+}
+.fos-msg-response ul{
+	margin: 0 5px 0 -46px;
+	width: 100%;
+	list-style: none;
+}
+.fos-msg-response ul li{
+	padding: 5px 20px 0 20px;
+	color: lighten(@fos-tabnavigation, 40%);
+	display: inline-block !important;
+	border-left: 1px solid lighten(@fos-tabnavigation, 80%) !important;
+}
+.fos-msg-response ul li:last-child{
+	border-right: none;
+}
+.fos-msg-response ul li a{
+	color: lighten(@fos-tabnavigation, 80%);
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-msg-response ul li a:hover{
+	color: lighten(@fos-tabnavigation, 60%);
+}
+.fos-compose-mail{
+	margin: 30px 10px 5px 10px;
+	background: lighten(@fos-tabnavigation, 60%) !important;
+	color: lighten(@fos-tabnavigation, 100%);
+	width: 90%;
+	font-weight: 600;
+}
+.fos-compose-mail:hover{
+	background: lighten(@fos-tabnavigation, 1%) !important;
+}
+.fos-pan-menu li.fos-active-pan-menu{
+	font-weight: 700;
+	color: @fos-tabnavigation;
+}
+.fos-inbox-message{
+	overflow: hidden;
+	width: 100%;
+}
+.fos-inbox-message-header{
+	height: 50px;
+	width: 100%;
+	padding: 10px;
+	color: lighten(@fos-tabnavigation, 60%) !important;
+	background: lighten(@fos-tabnavigation, 100%) !important;
+	box-shadow: 0px 2px 3px lighten(@fos-tabnavigation, 60%);
+}
+.fos-inbox-message-header a{
+	color: lighten(@fos-tabnavigation, 50%);
+	text-decoration: none;
+	cursor: pointer;
+}
+.fos-inbox-message-header a:hover{
+	color: lighten(@fos-tabnavigation, 40%);
+	text-decoration: none;
+}
+.fos-inbox-message-header span{
+	color: lighten(@fos-tabnavigation, 50%);
+}
+.fos-inbox-message-header fieldset{
+	margin: -5px 0px 5px 0px;
+}
+.fos-inbox-message-header button{
+	margin-left: -5px;
+	width: 40px;
+	border: 1px solid lighten(@fos-tabnavigation, 80%) !important;
+	background: url('@{fos-images}webpage-31.png') no-repeat !important;
+  	background-size: 100% 100% !important;
+}
+.fos-message-header{
+	margin-top: 10px;
+	background: lighten(@fos-tabnavigation, 100%);
+	border-top: 1px solid lighten(@fos-tabnavigation, 80%);
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 80%);
+	height: 40px;
+	width: 100%;
+}
+.fos-msg-listing{
+	height: 500px;
+	margin: 0px 10px 0px 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 80%;
+	border-right: 1px solid lighten(@fos-tabnavigation, 80%);
+}
+.fos-msg-list{
+	width: 100%;
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 80%);
+	height: 100px;
+	clear: both;
+	cursor: pointer;
+	overflow: hidden;
+	color: lighten(@fos-tabnavigation, 50%);
+	margin: 10px 0;
+}
+
+.fos-msg-selected{
+	background: lighten(@fos-tabnavigation, 85%) !important;
+}
+.fos-msg-list:hover{
+	background: lighten(@fos-tabnavigation, 85%) !important;
+}
+.fos-msg-list h1{
+	font-size: @fos-basefont-size + .1em;
+	font-weight: 600;
+	padding: 0;
+	margin: 10px 5px 5px 0;
+	line-height: @fos-basefont-size + .1em;
+	color: lighten(@fos-tabnavigation, 20%);
+}
+.fos-msg-list h2{
+	margin: 0 5px 5px 0;
+	font-size: @fos-basefont-size - .2em;
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+	line-height: @fos-basefont-size;
+}
+.fos-msg-list p{
+	margin: 10px 5px 5px 0;
+	font-size: @fos-basefont-size - .2em;
+	text-align: justify;
+	line-height: @fos-basefont-size;
+	
+}
+.fos-msg-list:last-child{
+	border-bottom: none;
+}
+.fos-msg-select{
+	width: 15%;
+	float: left;
+	height: 100px;
+}
+.fos-msg-snipet{
+	width: 80%;
+	float: left;
+	height: 100px;
+}
+.fos-msg-action{
+	width: 10%;
+	float: left;
+	height: 100px;
+}
+.fos-msg-action a span{
+	width: 100%;
+	color: lighten(@fos-tabnavigation, 80%);
+	font-size: @fos-basefont-size + .3em;
+	text-align: right;
+	padding: 5px 10px 5px 0px;
+}
+.fos-msg-action a span.fos-msg-time{
+	margin-top: 10px;
+	text-decoration: none;
+	font-size: @fos-basefont-size + .2em;
+}
+.fos-msg-action a span:hover{
+	color: lighten(@fos-tabnavigation, 60%);
+	text-decoration: none !important;
+}
+.fos-msg-details{
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	color: lighten(@fos-tabnavigation, 40%);
+	font-size: @fos-basefont-size;
+	position: relative;
+	width: 56.71% !important;
+}
+.fos-window span i:hover{
+	color: darken(@fos-tabnavigation, 40%);
+}
+//Table rules
+.fos-header-container{
+    display:table;
+    width:100%;
+}
+.table-row{  
+	 display:table-row;
+	 text-align: left;
+	 padding: 20px 0px !important;
+}
+.col{
+	display:table-cell;
+	text-align: left;
+	font-weight: 600;
+	padding: 5px 0px !important;
+}
+.fos-msg-details article{
+	width: 90%;
+	margin: 10px auto;
+	text-align: justify;
+	font-size: @fos-basefont-size;
+}
+.fos-active-msg-action{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 40px;
+}
+.fos-active-msg-action ul{
+	margin: 0;
+	width: 100%;
+	list-style: none;
+}
+.fos-active-msg-action ul li{
+	padding: 5px;
+	color: lighten(@fos-tabnavigation, 40%);
+	display: inline-block !important;
+}
+
+.fos-active-msg-action ul li a{
+	color: lighten(@fos-tabnavigation, 80%);
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-active-msg-action ul li a:hover{
+	color: lighten(@fos-tabnavigation, 30%);
+}
+//Compose new mail window
+
+.fos-compose-new-mail{
+	width: 100%;
+	height: 100%;
+	border: 1px solid lighten(@fos-tabnavigation, 60%);
+	z-index: 1000;
+	background: lighten(@fos-tabnavigation, 100%);
+}
+.fos-compose-new-mail article{
+	width: 100%;
+	height: 90%;
+	
+}
+.fos-compose-new-mail header{
+	width: 100%;
+	height: 40px;
+	background: @fos-inbox-header-bg;
+	color: lighten(@fos-tabnavigation, 100%);
+}
+.fos-compose-new-mail header h2{
+	width: 70%;
+	line-height: none;
+	margin:0;
+	padding: 8px 0 0 20px;
+	font-weignt: 600;
+	font-size: @fos-basefont-size + .4em;
+	float: left;
+}
+.fos-compose-new-mail header span{
+	width: 70%;
+	line-height: none;
+	margin:0;
+	padding: 0 0 0 0;
+	font-size: @fos-basefont-size - .2em;
+	float: right;
+}
+.fos-compose-new-mail ul{
+	padding: 5px;
+	width: 30%;
+	list-style: none;
+	float: right;
+	text-align: right;
+}
+.fos-compose-new-mail ul li{
+	padding: 5px;
+	color: lighten(@fos-tabnavigation, 100%);
+	display: inline-block !important;
+}
+
+.fos-compose-new-mail ul li a{
+	color: lighten(@fos-tabnavigation, 100%);
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-compose-new-mail div.fos-newmsg-bottom-link{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid lighten(@fos-tabnavigation, 60%);
+}
+
+.fos-newmsg-link-wrapper{
+	margin-left: 0 !important;
+	padding: 5px;
+	width: 100%;
+	float: left !important;
+}
+.fos-newmsg-link-wrapper button{
+	height: 30px;
+	width: 80px;
+	color: lighten(@fos-tabnavigation, 100%);
+	font-size: @fos-basefont-size;
+}
+.fos-newmsg-link-wrapper button.fos-links{
+	height: 30px;
+	width: 30px;
+	border: none;
+	color: lighten(@fos-tabnavigation, 60%);
+	font-size: @fos-basefont-size;
+	background: none !important;
+}
+.fos-newmsg-link-wrapper button.fos-links:hover{
+	color: lighten(@fos-tabnavigation, 30%);
+}
+.fos-newmsg-link-wrapper button.fos-delete-draft{
+	padding-left: 50px;
+}
+.fos-send{
+	width: 125px; 
+	float: left; 
+	border-right: 1px solid lighten(@fos-tabnavigation, 60%);
+}
+.fos-other-link{
+	width: 270px; 
+	float: left; 
+	
+}
+.fos-del{
+	width: 30px; 
+	float: right;
+	border-left: 1px solid lighten(@fos-tabnavigation, 60%);
+}
+.fos-compose-new-mail article{
+	margin-top: 0;
+	width: 100%;
+	height: 75%;
+	padding: 5px 10px 5px 20px;
+}
+#fos-ccbcc span{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	padding: 2px;
+	color: lighten(@fos-tabnavigation, 60%);
+}
+#fos-ccbcc span.fos-bcc{
+	right: 10;
+}
+#fos-ccbcc span.fos-cc{
+	right: 40px;
+}
+#fos-ccbcc span a{
+	color: lighten(@fos-tabnavigation, 60%);
+	text-decoration: none;
+}
+.fos-compose-new-mail article input{
+	height: 40px;
+	border: none;
+	width: 280px !important;
+}
+
+.fos-compose-new-mail article input{
+	width: 100%;
+}
+.fos-compose-new-mail article label{
+	border: none;
+	width: 70px;
+}
+.fos-compose-new-mail article input:focus{
+	border: none !important;
+	box-shadow: none !important;
+}
+#fos-editable{
+	margin-top: 40px;
+	width: 550px;
+	border: #bbb;
+	height: 350px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.fos-compose-new-mail article textarea:focus{
+	border: none !important;
+	box-shadow: none !important;
+	content: '';
+}
+.fos-nextmove-timeline{
+	width: 90%;
+	background: url('@{fos-images}next-move-time-line.png') no-repeat;
+	height: 100px;
+	margin-left: 100px;
+}
+.fos-nextmove-user-tabs{
+	margin-left: 10% !important;
+}
+.fos-nvuser{
+	left: 300px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid @fos-inbox-header-bg;
+	border-radius: 50%;
+	background: lighten(@fos-tabnavigation, 80%);
+	overflow: hidden;
+	margin-left: 365px;
+	margin-bottom: 10px;
+}
+.fos-nvuser span{
+	background: @fos-inbox-header-bg;
+	width: 20px;
+	height: 20px;
+	padding: 5px !important;
+	color: @fos-inbox-header-bg !important;
+}
+.fos-subs-type{
+	border: 1px solid lighten(@fos-tabnavigation, 80%);
+	margin: 5% 1%;
+	width: 28% !important;
+	padding: 0 !important;
+	min-height: 200px !important;
+	position: relative;
+}
+
+.fos-subs-type header{
+	width: 100%;
+	height: 50px;
+	color: lighten(@fos-tabnavigation, 100%);
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fos-subs-type header h2{
+	line-height: 50px;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: @fos-basefont-size + .4em;
+	font-weight: 500;
+}
+.fos-sample-user{
+	background: linear-gradient(@fos-inbox-header-bg, darken(@fos-inbox-header-bg, 20%));
+}
+.fos-premium-user{
+	background: linear-gradient(lighten(@fos-premium-user, 30%), @fos-premium-user);
+}
+.fos-gold-user{
+	background: linear-gradient(@fos-gold-user, darken(@fos-gold-user, 30%));
+	border-color: @fos-gold-user !important;
+}
+.fos-subs-type header.fos-sample-user span.fos-down-arrow{
+	position: absolute;
+	background: none !important;
+	top: 50px;
+	left: 45%;
+	width: 10px; 
+	margin: 0;
+	padding: 0;
+	height: 20px; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid darken(@fos-inbox-header-bg, 20%);
+}
+.fos-subs-type header.fos-premium-user span.fos-down-arrow{
+	position: absolute;
+	background: none !important;
+	top: 50px;
+	left: 45%;
+	width: 10px; 
+	margin: 0;
+	padding: 0;
+	height: 20px; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid @fos-premium-user;
+}
+.fos-subs-type header.fos-gold-user span.fos-down-arrow{
+	position: absolute;
+	background: none !important;
+	top: 50px;
+	left: 45%;
+	width: 10px; 
+	margin: 0;
+	padding: 0;
+	height: 20px; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid darken(@fos-gold-user, 30%);
+}
+.fos-subs-type article{
+	width: 100%;
+	margin: 20px 0;
+}
+.fos-subs-type article ul{
+	list-style: none;
+	margin: none !important;
+	padding: none !important;
+}
+.fos-subs-type article ul li{
+	padding: 10px 0;
+}
+.fos-subs-type footer{
+	width: 100%;
+	height: 50px;
+	color: lighten(@fos-tabnavigation, 100%);
+	margin: 0 !important;
+	padding: 5px !important;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fos-subs-type footer p{
+	font-size: @fos-basefont-size + .4em;
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 30px;
+	float: left;
+}
+.fos-subs-type footer button{
+	font-size: @fos-basefont-size - .2em;
+	text-align: center;
+	float: right;
+	border-radius: 5px !important;
+	box-shadow: 2px 2px 4px lighten(@fos-tabnavigation, 30%);
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 10px;
+	background: linear-gradient(@fos-gold-user, darken(@fos-gold-user, 10%));
+}
+
+
+//Search Buyer-------------------------------------------------------------------------
+.fos-fixed-container{
+	height: 650px;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.fos-buyer-search{
+	width: 100%;
+	float: left;
+	text-align: left;
+	color: @fos-inbox-header-bg;
+}
+.fos-buyer-search h1{
+	font-size: @fos-basefont-size + 2em;
+	font-style: italic;
+	margin-left: 10%;
+	line-height: @fos-basefont-size + 2em;
+}
+.fos-select-target-buyer-search {
+   margin-left: -10%;
+   width: 65% !important;
+   float: right;
+}
+.fos-buyer-search-header{
+	height: 100px;
+	background: @fos-inbox-header-bg;
+	width: 102%;
+	padding: 3% 5%;
+	margin-left: -20px;
+}
+.fos-buyer-search-header a{
+	margin-top: 50px !important;
+	line-height: @fos-basefont-size;
+	color:  lighten(@fos-tabnavigation, 100%);
+	font-size: @fos-basefont-size + .3em;
+}
+.fos-buyer-search-header a:hover{
+	color:  darken(@fos-tabnavigation, 10%);
+	text-decoration: none;
+}
+.fos-buyer-search-header fieldset{
+	margin-top: -1%;
+	border: 1px solid #fff;
+	width: 100%;
+	height: 60px;
+}
+
+// Contacts tab
+#accordion{
+	margin-top: 5%;
+	padding: 10px;
+	height: 80px;
+	background: none !important;
+}
+
+#accordion ul{
+	padding: 0;
+	margin: 0;
+}
+.panel-title{
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}
+.panel-heading h4 a{
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+}
+.fos-contact-list-image{
+	width: 80px;
+	height: 80px;
+	background: lighten(@fos-tabnavigation,80%);
+	overflow: hidden;
+	float: left;
+}
+.fos-contact-list-image img{
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	margin: 0;
+}
+.fos-contact-list-info{
+	width: 265px;
+	height: 100px;
+	float: left;
+	padding-left: 20px;
+	margin-top: 0;
+}
+.fos-contact-list-info h3{
+	font-size: @fos-basefont-size + .4em;
+	line-height: @fos-basefont-size + .4em;
+}
+.fos-contact-list-info p{
+	font-size: @fos-basefont-size;
+	line-height: @fos-basefont-size;
+	text-align: left;
+}
+.fos-contact-list{
+	width: 100%;
+	clear: both;
+	color: lighten(@fos-tabnavigation, 50%);
+	margin: 10px 0;
+}
+.fos-contact-snipet{
+	width: 100%;
+	float: left;
+}
+.fos-contact-image{
+	width: 150px;
+	background: lighten(@fos-tabnavigation,80%);
+	height: 150px;
+	padding: 0;
+	margin: 0;
+}
+.fos-contact-image img{
+	width: 150px;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+}
+.fos-contact-about h4{
+	width: 90%;
+	line-height: @fos-basefont-size + 1em;
+	text-align: left;
+	margin: 0 auto;
+	padding: 10px 0;
+	font-weight: 700;
+}
+.fos-contact-about P{
+	width: 90%;
+	line-height: @fos-basefont-size + 1em;
+	text-align: justify;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.fos-contact-btn button{
+	margin-bottom: 10px !important;
+	width: 100%;
+	height: 35px;
+}
+
+// Notification tab contents
+
+.fos-notification-sidebar{
+	width: 100%;
+	margin-top: 20px;
+	margin-left: -10px;
+}
+.fos-notification-sidebar ul{
+	list-style: none;
+	margin-left: -10px;
+}
+.fos-notification-sidebar ul li{
+	display: inline-block;
+	padding: 30px 10px 30px 0;
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 80%);
+	font-size: @fos-basefont-size + .1em;
+}
+.fos-notification-sidebar ul li:last-child{
+	border-bottom: none;
+}
+.fos-notification-sidebar ul li a{
+	display: block;
+	text-decoration: none;
+}
+.fos-notification-sidebar ul li a:hover{
+	text-decoration: none;
+	color: darken(@fos-tabnavigation, 10%);
+}
+.fos-notification-sidebar ul li a span.badge{
+	background: none;
+}
+.fos-notification-sidebar ul li a span i{
+	color: lighten(@fos-tabnavigation, 80%);
+	font-size: @fos-basefont-size + 1em;
+}
+.fos-notification-sidebar ul li a span i:hover{
+	color: lighten(@fos-tabnavigation, 40%);
+}
+
+//Notification
+
+.fos-profile-viewer{
+	width: 40% !important;
+	overflow: scroll !important;
+	overflow-x: hidden !important;
+	height: 500px;
+}
+.fos-del-viewer{
+	width: 20px;
+	float: left;
+	height: 100px;
+}
+.fos-del-viewer span i{
+	font-size: @fos-basefont-size + 1em;
+	color: lighten(@fos-tabnavigation, 80%);
+}
+.fos-del-viewer span i:hover{
+	color: lighten(@fos-tabnavigation, 40%);
+	cursor: pointer;
+}
+.fos-viewer-pos{
+	border-left: 1px solid lighten(@fos-tabnavigation, 70%);
+	margin: 5px 0 0 -6px;
+	line-height: 30px;
+}
+.fos-viewer-pos a{
+	color: lighten(@fos-tabnavigation, 40%);
+	font-size: @fos-basefont-size + .1em;
+}
+.fos-viewer-pos a:hover{
+	color: lighten(@fos-tabnavigation, 20%);
+	text-decoration: none;
+}
+.fos-viewer-img{
+	width: 80px;
+	height: 80px;
+	background: lighten(@fos-tabnavigation,80%);
+	margin-left: 50px;
+	overflow: hidden;
+	float: left;
+}
+.fos-viewer-img img{
+	width: 80px;
+	height: 80px;
+}
+.fos-viewer-info{
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding-left: 20px;
+	margin-top: 0;
+}
+.fos-viewer-info h3{
+	font-size: @fos-basefont-size + .3em;
+	line-height: @fos-basefont-size + .3em;
+}
+.fos-viewer-info p{
+	font-size: @fos-basefont-size;
+	line-height: @fos-basefont-size;
+	text-align: left;
+}
+.fos-viewer-btn{
+	width: 90px;
+	height: 100px;
+	float: left;
+}
+.fos-viewer-btn button{
+	width: 100%;
+	height: 30px;
+	margin: 5px;
+	padding: 0;
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-profile-viewer-list{
+	padding: 10px 0;
+	border-top: 1px solid lighten(@fos-tabnavigation, 80%);
+	overflow: hidden;
+}
+.fos-profile-viewer-list:hover{
+	background: 1px solid lighten(@fos-tabnavigation, 85%) !important;
+}
+.fos-profile-viewer-list:first-child{
+	padding: 10px 0;
+	border-top: none;
+}
+.fos-notification-alerts{
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 80%);
+	margin: 5px 0;
+	height: 80px;
+	clear: both;
+	overflow: hidden;
+}
+.fos-notification-alerts:last-child{
+	border-bottom: none;
+}
+.fos-notification-alerts ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.fos-notification-alerts ul li{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: lighten(@fos-tabnavigation, 80%);
+	overflow: hidden;
+	margin: 5px;
+}
+.fos-notification-alerts ul li img{
+	width: 100%;
+	height: 100%;
+}
+.fos-notification-alerts ul li p{
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 10px;
+	color: lighten(@fos-tabnavigation, 100%);
+	font-size: @fos-basefont-size + .5em !important;
+	height: 100%;
+}
+.fos-notification-alerts ul li a:hover{
+	text-decoration: none;
+}
+.fos-notification-alerts p{
+	height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: @fos-basefont-size + .2em !important;
+    color: lighten(@fos-tabnavigation, 60%);
+    cursor: pointer;
+}
+
+//Account Settings
+#fos-editable-signature{
+	border: 1px solid lighten(@fos-tabnavigation, 80%);
+	background: lighten(@fos-tabnavigation, 100%);
+	height: 300px;
+	padding: 10px;
+	color: lighten(@fos-tabnavigation, 20%);
+}
+.fos-signature-header p{
+	display: table-cell;
+	padding: 5px 50px;
+    vertical-align: middle;
+    text-align: Left;
+    font-size: @fos-basefont-size + .1em !important;
+    color: lighten(@fos-tabnavigation, 60%);
+    cursor: pointer;
+}
+.fos-sign-group h4 a{
+	font-weight: 500 !important;
+	font-size: @fos-basefont-size;
+	color: lighten(@fos-tabnavigation, 60%);
+}
+.fos-sign-group span{
+	float: right !important;
+}
+.fos-sign-group span:hover{
+	color: #ff0000;
+}
+.fos-user-signature{
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+.fos-user-signature textarea{
+	width: 100%;
+	height: 300px !important;
+	padding: 20px;
+	background: transparent;
+	border: .001em solid lighten(@fos-tabnavigation, 80%) !important;
+	border: none;
+}
+.fos-editor{
+	border: 1px solid lighten(@fos-tabnavigation, 80%) !important;
+	width: 100% !important;
+	height: 40px !important;
+	margin-top: 25px !important;
+	margin-bottom: 10px !important;
+	float: left;
+	margin-left: -15px;
+	text-align: right !important;
+	padding: 5px;
+}
+#wysihtml5-toolbar span{
+	width: 40px !important;
+	height: 40px !important;
+	padding: 5px;
+	overflow: hidden;
+	font-size: @fos-basefont-size + .3em;
+	font-weight: normal;
+}
+.fos-editor a i{
+	margin-top: 10px;
+	color: lighten(@fos-tabnavigation, 70%);
+}
+.fos-editor a i:hover{
+	color: lighten(@fos-tabnavigation, 40%);
+	text-decoration: none;
+}
+.fos-signature-btn{
+	margin-top: 20px;
+	
+}
+.fos-signature-btn button{
+	width: 100px;
+}
+//Password Change Logo and profile picture
+
+.fos-change-pswd-profile{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: lighten(@fos-tabnavigation, 80%);
+}
+.fos-change-pswd-profile span{
+	position: absolute;
+	top: 5px;
+	background: transparent;
+	color: lighten(@fos-tabnavigation, 40%);
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-change-pswd-logo span{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: transparent;
+	color: lighten(@fos-tabnavigation, 40%);
+	width: 20px;
+	height: 20px;
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-change-pswd-profile span:hover{
+	color: lighten(@fos-tabnavigation, 30%);
+	cursor: pointer;
+}
+.fos-change-pswd-logo span:hover{
+	color: lighten(@fos-tabnavigation, 30%);
+	cursor: pointer;
+}
+
+.fos-change-pswd-profile img{
+	width: 100%;
+	height: 100%;
+	padding: 2%;
+}
+.fos-change-pswd-logo p{
+	width: 100%;
+	height: 100%;
+	padding: 35%;
+	font-weight: 700;
+	text-align: center;
+	color: lighten(@fos-tabnavigation, 100%);
+}
+.fos-change-pswd-logo{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: lighten(@fos-tabnavigation, 80%);
+	margin-top: 5%;
+}
+.fos-change-password input[type="password"]{
+	height: 40px !important;
+	border-radius: 0 !important;
+}
+.fos-change-password input[type="text"]{
+	height: 40px !important;
+	border-radius: 0 !important;
+}
+.fos-change-password input[type="email"]{
+	height: 40px !important;
+	border-radius: 0 !important;
+}
+.fos-edit-profile{
+	overflow: scroll !important;
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+	height: 500px;
+}
+.fos-change-password textarea{
+	height: 150px !important;
+	border-radius: 0 !important;
+	width: 100%;
+	resize: none;
+	border: 1px solid lighten(@fos-tabnavigation, 80%);
+}
+.fos-language-select select{
+	height: 40px;
+	border: none;
+	background: none;
+}
+.select-wrapper{
+	float: left;
+	color: lighten(@fos-tabnavigation, 40%);
+	display: inline-block;
+	background: url('@{fos-images}select-2.png') no-repeat right;
+	cursor: pointer;
+}
+.select-wrapper, .select-wrapper select{
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+}
+.select-wrapper .holder{
+	display: block;
+	margin: 0 35px 0 5px;
+	white-space: nowrap;            
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	z-index: -1;
+}
+.select-wrapper select{
+	margin: 0;
+	position: absolute;
+	z-index: 2;            
+	cursor: pointer;
+	outline: none;
+	opacity: 0;	
+}
+.fos-reg-email{
+	color: lighten(@fos-tabnavigation, 40%);
+}
+.fos-reg-email span{
+	color: lighten(@fos-tabnavigation, 60%);
+	padding-left: 10px;
+}
+.fos-reg-email span:hover{
+	color: #FF0000;
+	cursor: pointer;
+}
+#fos-mail-compose{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 35%;
+	height: 60%;
+}
+#fos-editable{
+	padding: 20px 15px 10px 10px;
+	height: 340px;
+}
+.fos-message-space{
+	padding-bottom: -2%; 
+	height: 100%; 
+	width: 100%;
+}
+.fos-message-space ul{
+	list-style: circle;
+	margin: 0;
+	padding: 0;
+}
+.fos-message-space ul li{
+	display: list-item;
+}
+#cke_fos-editable{
+	border: none !important;
+}
+#fos-browse-dd ul.dropdown-menu{
+	margin-top: 47%;
+	width: 188%;
+}
+.fos-user-plan{
+	position: absolute;
+	top: 19.22%;
+	left: 33.3%;
+	width: 20px;
+	height: 20px;
+	color: @fos-inbox-header-bg;
+	font-size: @fos-basefont-size + .2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===============================Common Customizaton====================================
+.fos-content-container{
+	margin: 3% 1%;
+}
+.fos-minimize-position{
+	bottom: -55% !important;
+}
+.icon-adn{
+  font-size: @fos-basefont-size + .2em;
+}
+.btn-default{
+	border-radius: 0 !important;
+	border: .001em solid lighten(@fos-tabnavigation, 80%) !important;
+}
+.fos-form-group-inside{
+	margin-top: 2% !important;
+	magrin-bottom: 2% !important;
+}
+.fos-form-group-separator-normal{
+	padding: 1% 0;
+	border-bottom: 1px solid lighten(@fos-tabnavigation, 80%);
+}
+.fos-form-group-separator:last-child{
+	border-bottom: none;
+}
+#accordion ul li{
+	padding-left: 20px;
+}
+.btn-font-normal{
+	font-size: @fos-basefont-size !important;
+}
+.fos-divider-right{
+	border-right: 1px solid lighten(@fos-tabnavigation, 70%);
+	height: 70px;
+}
+.fos-left-border{
+	border-right: 1px solid lighten(@fos-tabnavigation, 80%);
+}
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px; 
+    height: 40px;
+    border-radius: 0 !important; 
+}
+.right-inner-addon input:focus {
+    box-shadow: none !important; 
+    border: none !important; 
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    color: lighten(@fos-tabnavigation, 70%);
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.fos-min-height-div{
+	min-height: 130px;
+	margin: 10px;
+}
+.fos-noborder{
+	border-raduis: 0 !important;
+	float: right;
+	margin-right: -4px;
+	width: 103%;
+}
+.fos-subs-type article .badge{
+	float: right;
+	margin-right: 20px !important;
+	background: none !important;
+	font-size: @fos-basefont-size + .3em !important;
+	font-weight: normal;
+}
+.fos-subs-type article .badge i.icon-ok{
+	color: green;
+}
+.fos-subs-type article .badge i.icon-remove{
+	color: red;
+}
+.fos-relative{
+	position: relative;
+	border-left: 1px solid lighten(@fos-tabnavigation, 70%);
+}
+.fos-inbox-icons{
+	font-size: @fos-basefont-size + .5em;
+}
+.fos-bottom-spacing{
+	margin-bottom: 5%;
+}
+.fos-spacing-right{
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+}
+.fos-spacing-left{
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+}
+.fos-clear{
+	clear: top;
+}
+.fos-pull-left{
+	float: left;
+}
+.fos-pull-right{
+	float: left;
+}
+.fos-hide {
+  display: none; 
+}
+.fos-topspacing{
+	margin-top: 130px;
+	z-index: 0;
+}
+.fos-clear-top{
+	margin-top: 20px;
+	z-index: 0;
+}
+
+::-webkit-input-placeholder {
+  color: lighteen(@fos-basefont-color, 30%); 
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: lighteen(@fos-basefont-color, 30%);
+  opacity: 1; 
+}
+
+:-ms-input-placeholder {
+  color: lighteen(@fos-basefont-color, 30%); 
+}
+.fos-bottom-spacing{
+	padding-bottom: 3%;
+}
+.fos-list-btn button{
+	height: 30px !important;
+	width: 30px !important;
+}
+/* Tooltips helpers */
+.form-group{
+	position: relative !important;
+}
+#fos-tooltip{
+	position: absolute;
+    float:right;
+    top:35% !important;
+    right:-10px;
+    z-index:1000;
+}
+#fos-tooltip:hover{
+    z-index:3000;
+}
+#fos-tooltip > span{
+    display:inline-block;
+    width:17px;
+    height:17px;
+    line-height:16px;
+    font-size:@fos-basefont-size + .1em;
+    font-weight:bold;
+    text-align:center;
+    color:#FFF;
+    cursor:help;
+    background-color:@fos-inbox-header-bg;
+    position:relative;
+    border-radius:10px;
+}
+#fos-tooltip .content{ 
+	opacity:0; 
+	width:200px; 
+	background-color:@fos-inbox-header-bg; 
+	color:#FFF; 
+	font-size:.9em;
+	min-height: 40px; 
+	position:absolute; 
+	top:0; 
+	left:20px; 
+	padding:8px;
+	border-radius:none; 
+	pointer-events:none; 
+	box-shadow: 2px 2px 5px #000;
+	transition:0.2s cubic-bezier(0.1, 0.1, 0.25, 2); 
+	-webkit-transition:0.3s cubic-bezier(0.1, 0.2, 0.5, 2.2); 
+	-moz-transition:0.3s cubic-bezier(0.1, 0.2, 0.5, 2.2); 
+}
+#fos-tooltip p{ 
+	padding:0; 
+	text-align: justify;
+}
+#fos-tooltip.down .content{ 
+	left:auto; 
+	right:0; 
+	top:30px; 
+}
+#fos-tooltip:hover .content{ 
+	opacity:1; 
+	left:36px; 
+}
+#fos-tooltip .content b{ 
+	height:0; 
+	width:0; 
+	border-color:@fos-inbox-header-bg @fos-inbox-header-bg transparent transparent; 
+	border-style:solid; 
+	border-width:9px 7px; 
+	position:absolute; 
+	left:-14px; 
+	top:8px; 
+}
+#fos-tooltip.down .content b{ 
+	left:auto; 
+	right:6px; 
+	top:-10px; 
+	border-width:5px; 
+	border-color:transparent @fos-inbox-header-bg @fos-inbox-header-bg transparent; 
+}
+
+// Table formatting
+.fos-table-container{
+    display:table;
+    width:90%;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+.fos-table-caption{
+    display: table-caption;
+    line-height: 50px;
+    font-size: @fos-basefont-size + .5em;
+    font-weight: 600; 
+    color: lighten(@fos-base-font-color, 60%);
+}
+.fos-table-heading{
+     font-weight: 700;
+     display:table-row;
+     background-color: @fos-inbox-header-bg;
+     text-align: center;
+     line-height: 30px;
+     padding: 5px 0;
+     font-size: @fos-basefont-size + .2em;
+     color: lighten(@fos-base-font-color, 100%);
+     
+}
+.fos-table-row:nth-child(odd){  
+     display:table-row;
+     text-align: center;
+     padding: 5px 0;
+     background: lighten(@fos-inbox-header-bg, 40%);
+}
+.fos-table-row:nth-child(even){  
+     display:table-row;
+     text-align: center;
+     padding: 5px 0;
+     background: lighten(@fos-inbox-header-bg, 45%);
+}
+.fos-table-row:hover{  
+     background: lighten(@fos-inbox-header-bg, 35%);
+     color: lighten(@fos-inbox-header-bg, 100%);
+}
+.fos-table-col{ 
+	display:table-cell;
+	padding: 5px 5px;
+	border: 1px solid lighten(@fos-base-font-color, 80%);
+}
+.fos-table-col a{ 
+ 	color: @fos-inbox-header-bg;
+ 	font-weight: 500;
+ 	text-decoration: none;
+}
+.fos-table-col a:hover, .fos-table-col a:visited{ 
+ 	color: darken(@fos-inbox-header-bg, 20%);
+ 	font-weight: 700;
+ 	text-decoration: none;
+}
+.fos-table-col span{
+	float: right;
+	padding: 5px;
+	font-size: @fos-basefont-size + .1em;
+	color: lighten(@fos-base-font-color, 70%);
+}
+.fos-table-col span:hover{
+	color: lighten(@fos-base-font-color, 40%);
+	cursor: pointer;
+}
+.fos-table-col span.glyphicon-trash:hover{
+	color: @fos-critical-action;
+	cursor: pointer;
+}
+.fos-table-col-general{
+	width: 11%;
+}
+.fos-table-col-details{
+	width: 23%;
+}
+.fos-table-col-action{
+	width: 6%;
+}
+
+
+
+//---------------------------------------------------------------------------------------------
+// MEDI qUERIES FOR THE LAPTOP AND OLD DESKTOP DEVICES
+///--------------------------------------------------------------------------------------------
+@media screen and (max-width: 1366px) {
+	.fos-inbox-container{
+		width: 100%;
+		height: auto;
+	}
+	.fos-msg-details{
+		width: 56.51% !important;
+	}
+	.fos-profile-viewer{
+		width: 39% !important;
+	}
+	.fos-viewer-img{
+		margin-left: 10px;
+	}
+	.fos-viewer-btn{
+		width: 70px;
+	}
+	.fos-msg-select{
+		width: 10%;
+	}
+	.fos-contact-list-info{
+		width: 75%;
+	}
+	.fos-msg-snipet{
+		width: 90%;
+	}
+	#fos-browse-dd ul.dropdown-menu{
+		margin-top: 60%;
+		min-width: 200%;
+	}
+	.fos-nextmove-user-tabs{
+		margin-left: 20% !important;
+	}
+	.fos-subs-type:first-child{
+		margin: 5% 3% 5% 1%;
+		width: 28% !important;
+	}
+	.fos-subs-type:last-child{
+		margin: 5% 1% 5% 3%;
+		width: 28% !important;
+	}
+	#fos-mail-compose{
+		width: 50%;
+		height: 75%;
+	}
+	#fos-editable{
+		width: 650px;
+		height: 250px;
+	}
+	.fos-minimize-position{
+		bottom: -70% !important;
+	}
+	.fos-user-plan{
+		top: 19.7%;
+		left: 36.6%;
+	}
+	.fos-business-desc{
+		left: -260%;
+	}
+	.fos-business-tabs button{
+		right: 100%;
+	}
+	// Slide up nav
+	.fos-zoom-div div{
+		width: 90px;
+
+	}
+	.fos-buyer{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: 0 0;
+		width: 100px;
+	}
+	.fos-seller{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -90px 0;
+		width: 90px;
+	}
+	.fos-entrepreneurs{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -180px 0;
+		width: 90px;
+	}
+	.fos-investors{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -270px 0;
+		width: 90px;
+	}
+	.fos-service-provider{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -360px 0;
+		width: 90px;
+	}
+	.fos-service-seeker{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -450px 0;
+		width: 90px;
+	}
+	.fos-employer{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -540px 0;
+		width: 90px;
+	}
+	.fos-employee{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -630px 0;
+		width: 90px;
+	}
+	.fos-franchisors{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -720px 0;
+		width: 90px;
+	}
+	.fos-franchisees{
+		background: url('@{fos-images}slide-up-lapi.png') no-repeat;
+		background-position: -810px 0;
+		width: 90px;
+	}
+	#browse input{
+		width: 73%;
+	}
+}
